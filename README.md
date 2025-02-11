@@ -1,12 +1,12 @@
-# Xin chào, tôi là Xavia 👋
+# Hello, I'm Xavia 👋
 
+## 🚀 About Me
 
-## 🚀 Về tôi
+I am a **Full Stack Developer** with a passion for learning new technologies, applying them, and enhancing application performance. I specialize in **JavaScript** and **Java** and am always eager to learn and contribute to innovative projects. Currently, I am shifting my focus toward learning **AI**.
 
-Tôi là một Full Stack Developer với niềm đam mê tạo ra các giải pháp tinh tế cho những vấn đề phức tạp. Tôi chuyên về JavaScript, Java. Luôn háo hức học hỏi và đóng góp vào các dự án sáng tạo. Và hiện tại tôi đang chuyển hướng học thêm về AI.
+## 💻 Skills
 
-## 💻 Kỹ năng
-Ngôn ngữ:
+### Programming Languages:
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![Java](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white)
@@ -14,7 +14,7 @@ Ngôn ngữ:
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 
-Framework and library
+### Frameworks & Libraries:
 
 ![ReactJS](https://img.shields.io/badge/-ReactJS-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![React Native](https://img.shields.io/badge/-React%20Native-61DAFB?style=flat-square&logo=react&logoColor=black)
@@ -23,25 +23,25 @@ Framework and library
 ![Spring Boot](https://img.shields.io/badge/-Spring%20Boot-6DB33F?style=flat-square&logo=spring&logoColor=white)
 ![Express.js](https://img.shields.io/badge/-Express.js-000000?style=flat-square&logo=express&logoColor=white)
 
-Database
+### Databases:
 
 ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 ![SQL Server](https://img.shields.io/badge/-SQL%20Server-CC2927?style=flat-square&logo=microsoft-sql-server&logoColor=white)
 ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
 
-Cloud and tool
+### Cloud & Tools:
 
 ![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
 ![Supabase](https://img.shields.io/badge/-Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
 ![Vercel](https://img.shields.io/badge/-Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
 
-## 🏆 Dự án nổi bật
+## 🏆 Featured Projects
 
-- **[Tên Dự Án 1]**: Mô tả ngắn gọn về dự án.
-- **[Tên Dự Án 2]**: Mô tả ngắn gọn về dự án.
-- **[Tên Dự Án 3]**: Mô tả ngắn gọn về dự án.
+- **[Project Name 1]**: A short description of the project.
+- **[Project Name 2]**: A short description of the project.
+- **[Project Name 3]**: A short description of the project.
 
 ## 📊 GitHub Stats
 
@@ -49,7 +49,7 @@ Cloud and tool
   <img src="https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=radical" alt="GitHub Stats" />
 </div>
 
-## 🌐 Kết nối với tôi
+## 🌐 Connect with Me
 
 [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/your-username)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-linkedin-profile)
@@ -57,23 +57,25 @@ Cloud and tool
 
 ---
 
-### 👨‍💻 Đang làm việc với
+### 👨‍💻 Currently Working On:
 
-- Phát triển ứng dụng web với ReactJS và NextJS
-- Xây dựng ứng dụng di động đa nền tảng với Flutter
-- Tối ưu hóa hiệu suất và trải nghiệm người dùng
+- Developing **web applications** with **ReactJS** and **NextJS** (experimenting with new technologies, widely used for optimizing both frontend and backend)
+- Building **cross-platform mobile applications** with **Flutter** and **React Native**
+- Optimizing **performance** and **real-time user experiences**
 
-### 🌱 Đang học
+### 🌱 Currently Learning:
 
-- Kiến trúc Microservices
-- DevOps và CI/CD
-- Machine Learning cơ bản
+- **Microservices architecture**
+- **DevOps & CI/CD**
+- **Basic Machine Learning**
+- **Vue.js and TypeScript**
 
-### 💬 Hãy hỏi tôi về
+### 💬 Ask Me About:
 
-- Phát triển web frontend và backend
-- Tối ưu hóa hiệu suất ứng dụng
-- Các thực hành tốt nhất trong phát triển phần mềm
+- **Frontend and backend web development**
+- **Application performance optimization**
+- **Best practices in software development**
+- **RESTful APIs**
 
 ---
 
