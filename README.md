@@ -1,8 +1,5 @@
 # Xin chào, tôi là Xavia 👋
 
-<div align="center">
-  <img src="image/avar.jpg" alt="Profile Picture" width="200" style="border-radius: 50%;" />
-</div>
 
 ## 🚀 Về tôi
 
