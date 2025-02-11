@@ -46,7 +46,7 @@ I am a **Full Stack Developer** with a passion for learning new technologies, ap
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=radical" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=nhutanhmc&show_icons=true&theme=radical" alt="GitHub Stats" />
 </div>
 
 ## 🌐 Connect with Me
