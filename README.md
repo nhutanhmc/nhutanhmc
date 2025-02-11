@@ -1,4 +1,4 @@
-# Xin chào, tôi là [Tên của bạn] 👋
+# Xin chào, tôi là Xavia 👋
 
 <div align="center">
   <img src="https://your-image-url.com/your-profile-picture.jpg" alt="Profile Picture" width="200" style="border-radius: 50%;" />
