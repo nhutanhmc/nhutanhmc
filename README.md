@@ -4,6 +4,8 @@
 
 I am a **Full Stack Developer** with a passion for learning new technologies, applying them, and enhancing application performance. I specialize in **JavaScript** and **Java** and am always eager to learn and contribute to innovative projects. Currently, I am shifting my focus toward learning **AI**.
 
+## Operating time
+
 ## 💻 Skills
 
 ### Programming Languages:
@@ -47,10 +49,7 @@ I am a **Full Stack Developer** with a passion for learning new technologies, ap
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=nhutanhmc&show_icons=true&theme=radical" alt="GitHub Stats" />
-  <a href="https://git.io/streak-stats"><img src="http://github-readme-streak-stats.herokuapp.com?user=nhutanhmc" alt="GitHub Streak" /></a>
 </div>
-
-[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=nhutanhmc)](https://git.io/streak-stats)
 
 ## 🌐 Connect with Me
 
@@ -62,7 +61,7 @@ I am a **Full Stack Developer** with a passion for learning new technologies, ap
 
 ### 👨‍💻 Currently Working On:
 
-- Developing **web applications** with **ReactJS** and **NextJS** (experimenting with new technologies, widely used for optimizing both frontend and backend)
+- Developing **web applications** with **ReactJS**, **Nodejs** and **NextJS** (experimenting with new technologies, widely used for optimizing both frontend and backend)
 - Building **cross-platform mobile applications** with **Flutter** and **React Native**
 - Optimizing **performance** and **real-time user experiences**
 
