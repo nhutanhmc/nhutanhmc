@@ -53,27 +53,6 @@ No activity tracked
 ![Vercel](https://img.shields.io/badge/-Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
 
-## 🏆 Featured Projects
-
-- **[Project Name 1]**: A short description of the project.
-- **[Project Name 2]**: A short description of the project.
-- **[Project Name 3]**: A short description of the project.
-
-## 📊 GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nhutanhmc&show_icons=true&theme=radical" alt="GitHub Stats" />
-</div>
-
-
-## 🌐 Connect with Me
-
-[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/nhutanhmc)
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anh-nguyen-296b53333/)
-[![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:nhutanhmc@gmail.com)
-
----
-
 ### 👨‍💻 Currently Working On:
 
 - Developing **web applications** with **ReactJS**, **Nodejs** and **NextJS** (experimenting with new technologies, widely used for optimizing both frontend and backend)
@@ -93,6 +72,27 @@ No activity tracked
 - **Application performance optimization**
 - **Best practices in software development**
 - **RESTful APIs**
+
+## 📊 GitHub Stats
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=nhutanhmc&show_icons=true&theme=radical" alt="GitHub Stats" />
+</div>
+
+
+## 🌐 Connect with Me
+
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/nhutanhmc)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anh-nguyen-296b53333/)
+[![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:nhutanhmc@gmail.com)
+
+---
+
+## 🏆 Featured Projects
+
+- **[Project Name 1]**: A short description of the project.
+- **[Project Name 2]**: A short description of the project.
+- **[Project Name 3]**: A short description of the project.
 
 ---
 
