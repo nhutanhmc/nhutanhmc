@@ -49,6 +49,8 @@ I am a **Full Stack Developer** with a passion for learning new technologies, ap
   <img src="https://github-readme-stats.vercel.app/api?username=nhutanhmc&show_icons=true&theme=radical" alt="GitHub Stats" />
 </div>
 
+[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=nhutanhmc)](https://git.io/streak-stats)
+
 ## 🌐 Connect with Me
 
 [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/your-username)
