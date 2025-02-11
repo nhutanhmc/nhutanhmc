@@ -1,5 +1,3 @@
-# Hello, I'm Xavia 👋
-
 <div align="center">
   <img src="/image/header.png" />
 </div>
