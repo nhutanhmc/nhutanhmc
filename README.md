@@ -62,6 +62,8 @@ No activity tracked
   <img src="https://github-readme-stats.vercel.app/api?username=nhutanhmc&show_icons=true&theme=radical" alt="GitHub Stats" />
 </div>
 
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nhutanhmc&hide_progress=true)
+
 ## 🌐 Connect with Me
 
 [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/nhutanhmc)
