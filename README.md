@@ -47,6 +47,7 @@ I am a **Full Stack Developer** with a passion for learning new technologies, ap
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=nhutanhmc&show_icons=true&theme=radical" alt="GitHub Stats" />
+  <a href="https://git.io/streak-stats"><img src="http://github-readme-streak-stats.herokuapp.com?user=nhutanhmc" alt="GitHub Streak" /></a>
 </div>
 
 [![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=nhutanhmc)](https://git.io/streak-stats)
