@@ -91,11 +91,11 @@ No activity tracked
 
 ---
 
-## 🏆 Featured Projects
+<!-- ## 🏆 Featured Projects
 
 - **[Project Name 1]**: A short description of the project.
 - **[Project Name 2]**: A short description of the project.
-- **[Project Name 3]**: A short description of the project.
+- **[Project Name 3]**: A short description of the project. -->
 
 ---
 
