@@ -1,5 +1,9 @@
 # Hello, I'm Xavia 👋
 
+<div align="center">
+  <img src="/image/header.png" />
+</div>
+
 ## 🚀 About Me
 
 I am a **Full Stack Developer** with a passion for learning new technologies, applying them, and enhancing application performance. I specialize in **JavaScript** and **Java** and am always eager to learn and contribute to innovative projects. Currently, I am shifting my focus toward learning **AI**.
