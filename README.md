@@ -64,6 +64,19 @@ No activity tracked
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nhutanhmc&hide_progress=true)
 
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nhutanhmc&layout=pie)](https://github.com/anuraghazra/github-readme-stats)
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhutanhmc&repo=github-readme-stats)](https://github.com/anuraghazra/github-readme-stats)
+
+[![Gist Card](https://github-readme-stats.vercel.app/api/gist?id=bbfce31e0217a3689c8d961a356cb10d)](https://gist.github.com/Yizack/bbfce31e0217a3689c8d961a356cb10d/)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nhutanhmc&exclude_repo=github-readme-stats,anuraghazra.github.io)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nhutanhmc&hide=javascript,html)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nhutanhmc&langs_count=8)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nhutanhmc&layout=compact)
 ## 🌐 Connect with Me
 
 [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/nhutanhmc)
