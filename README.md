@@ -7,7 +7,11 @@ I am a **Full Stack Developer** with a passion for learning new technologies, ap
 ## Operating time
 
 <!--START_SECTION:waka-->
-<!-- Data will be automatically inserted here -->
+
+```txt
+No activity tracked
+```
+
 <!--END_SECTION:waka-->
 
 
