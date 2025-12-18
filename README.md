@@ -239,10 +239,6 @@ const anh: Developer = {
 
 ## 📈 GitHub Analytics & Performance
 
-<div align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=nhutanhmc&show_icons=true&hide_border=true&bg_color=1a1b27&title_color=87CEEB&icon_color=4A90E2&text_color=c9d1d9&border_radius=10&include_all_commits=true&count_private=true&card_width=400" alt="GitHub Stats" />
-  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=nhutanhmc&hide_border=true&background=1a1b27&stroke=4A90E2&ring=87CEEB&fire=FFA500&currStreakLabel=87CEEB&sideLabels=c9d1d9&currStreakNum=c9d1d9&sideNums=c9d1d9&dates=c9d1d9&border_radius=10" alt="GitHub Streak" />
-</div>
 
 <div align="center">
   <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nhutanhmc&layout=compact&hide_border=true&bg_color=1a1b27&title_color=87CEEB&text_color=c9d1d9&border_radius=10&langs_count=8&card_width=400" alt="Top Languages" />
@@ -419,27 +415,6 @@ Ensuring peak performance:
 
 </div>
 
----
-
-## 🏆 GitHub Achievements & Trophies
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=nhutanhmc&theme=nord&no-frame=true&no-bg=false&margin-w=10&margin-h=10&column=7&title=Stars,Followers,Commits,Repositories,Issues,PullRequest,Reviews" alt="GitHub Trophies" width="98%"/>
-</div>
-
----
-
-## 🐍 Contribution Activity
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nhutanhmc/nhutanhmc/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nhutanhmc/nhutanhmc/output/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/nhutanhmc/nhutanhmc/output/github-contribution-grid-snake.svg">
-  </picture>
-</div>
-
----
 
 ## 📫 Let's Connect & Collaborate!
 
@@ -533,7 +508,7 @@ Ensuring peak performance:
 
 ### 🎵 Coding Soundtrack
 
-<img src="https://spotify-recently-played-readme.vercel.app/api?user=31k5kw6aq2onfocvq4d3jkvbrgva&width=600&count=3" alt="Spotify Recently Played" />
+
 
 ### ⚡ Fun Facts About Me
 
