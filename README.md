@@ -1,96 +1,17 @@
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=435&lines=Welcome+to+my+GitHub)](https://git.io/typing-svg)
+
 <div align="center">
-
-# 👋 Welcome to My GitHub Profile
-
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=2E9EF7&center=true&vCenter=true&random=false&width=600&lines=Full+Stack+Developer+%F0%9F%9A%80;JavaScript+%7C+Java+Enthusiast+%E2%98%95;Always+Learning+New+Tech+%F0%9F%92%A1;Building+Amazing+Projects+%F0%9F%8E%AF)](https://git.io/typing-svg)
-
-<img src="/image/header.png" width="100%" alt="Header Image" />
-
-[![Profile Views](https://komarev.com/ghpvc/?username=nhutanhmc&color=0e75b6&style=flat&label=Profile+Views)](https://github.com/nhutanhmc)
-[![GitHub followers](https://img.shields.io/github/followers/nhutanhmc?label=Followers&style=social)](https://github.com/nhutanhmc)
-[![GitHub stars](https://img.shields.io/github/stars/nhutanhmc?label=Stars&style=social)](https://github.com/nhutanhmc)
-
+  <img src="/image/header.png" />
 </div>
-
----
 
 ## 🚀 About Me
 
-```typescript
-const nhutanhmc = {
-    role: "Full Stack Developer",
-    location: "Vietnam 🇻🇳",
-    languages: ["JavaScript", "Java", "Dart"],
-    interests: ["Web Development", "Mobile Apps", "AI/ML"],
-    currentFocus: "Building scalable applications & Learning AI",
-    lifePhilosophy: "Code, Learn, Repeat 🔄"
-};
-```
+I am a **Full Stack Developer** with a passion for learning new technologies, applying them, and enhancing application performance. I specialize in **JavaScript** and **Java** and am always eager to learn and contribute to innovative projects. Currently, I am shifting my focus toward learning **AI**.
 
-🎯 **Passionate** Full Stack Developer with expertise in building modern web and mobile applications  
-💡 **Constantly learning** new technologies and applying them to real-world projects  
-🔧 **Specializing** in JavaScript ecosystem and Java-based solutions  
-🤖 **Currently exploring** the fascinating world of Artificial Intelligence
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nhutanhmc&hide_progress=true)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nhutanhmc&layout=compact)
 
----
-
-## 🛠️ Tech Stack
-
-<div align="center">
-
-### 💻 Languages
-
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-
-### ⚡ Frameworks & Libraries
-
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
-
-### 🗄️ Databases
-
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
-
-### ☁️ Cloud & Tools
-
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-
-</div>
-
----
-
-## 📊 GitHub Analytics
-
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=nhutanhmc&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117" alt="GitHub Stats" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nhutanhmc&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Top Languages" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=nhutanhmc&theme=tokyonight&hide_border=true&background=0D1117" alt="GitHub Streak" />
-</div>
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=nhutanhmc&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7" alt="GitHub Trophies" />
-</div>
-
----
-
-## ⏱️ Coding Activity
+## Operating time
 
 <!--START_SECTION:waka-->
 
@@ -104,80 +25,84 @@ No activity tracked
 
 <!--END_SECTION:waka-->
 
----
 
-## 🎯 What I'm Up To
+## 💻 Skills
 
-<table>
-<tr>
-<td width="50%" valign="top">
+### Programming Languages:
 
-### 👨‍💻 Currently Working On
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Java](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white)
+![Dart](https://img.shields.io/badge/-Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 
-- 🌐 Developing **modern web applications** with **React**, **Next.js** & **Node.js**
-- 📱 Building **cross-platform mobile apps** using **Flutter** & **React Native**
-- ⚡ Optimizing **application performance** and **user experiences**
-- 🔄 Implementing **real-time features** in web apps
+### Frameworks & Libraries:
 
-</td>
-<td width="50%" valign="top">
+![ReactJS](https://img.shields.io/badge/-ReactJS-61DAFB?style=flat-square&logo=react&logoColor=black)
+![React Native](https://img.shields.io/badge/-React%20Native-61DAFB?style=flat-square&logo=react&logoColor=black)
+![NextJS](https://img.shields.io/badge/-NextJS-000000?style=flat-square&logo=next.js&logoColor=white)
+![Flutter](https://img.shields.io/badge/-Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/-Spring%20Boot-6DB33F?style=flat-square&logo=spring&logoColor=white)
+![Express.js](https://img.shields.io/badge/-Express.js-000000?style=flat-square&logo=express&logoColor=white)
 
-### 🌱 Currently Learning
+### Databases:
 
-- 🏗️ **Microservices Architecture**
-- 🚀 **DevOps & CI/CD Pipelines**
-- 🤖 **Machine Learning Basics**
-- 💙 **TypeScript** & **Vue.js**
+![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![SQL Server](https://img.shields.io/badge/-SQL%20Server-CC2927?style=flat-square&logo=microsoft-sql-server&logoColor=white)
+![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
 
-</td>
-</tr>
-</table>
+### Cloud & Tools:
 
----
+![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
+![Supabase](https://img.shields.io/badge/-Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
+![Vercel](https://img.shields.io/badge/-Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
 
-## 💬 Let's Talk About
+### 👨‍💻 Currently Working On:
 
-```javascript
-const expertise = {
-    frontend: ["React", "Next.js", "Vue.js", "Responsive Design"],
-    backend: ["Node.js", "Express", "Spring Boot", "RESTful APIs"],
-    mobile: ["React Native", "Flutter"],
-    database: ["MongoDB", "PostgreSQL", "MySQL"],
-    practices: ["Clean Code", "Performance Optimization", "Best Practices"]
-};
+- Developing **web applications** with **ReactJS**, **Nodejs** and **NextJS** (experimenting with new technologies, widely used for optimizing both frontend and backend)
+- Building **cross-platform mobile applications** with **Flutter** and **React Native**
+- Optimizing **performance** and **real-time user experiences**
 
-// Feel free to reach out for collaboration or just a chat! ☕
-```
+### 🌱 Currently Learning:
 
----
+- **Microservices architecture**
+- **DevOps & CI/CD**
+- **Basic Machine Learning**
+- **Vue.js and TypeScript**
 
-## 🤝 Connect With Me
+### 💬 Ask Me About:
+
+- **Frontend and backend web development**
+- **Application performance optimization**
+- **Best practices in software development**
+- **RESTful APIs**
+
+## 📊 GitHub Stats
 
 <div align="center">
-
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nhutanhmc)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anh-nguyen-296b53333/)
-[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/Xavia0205?locale=vi_VN)
-[![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:nhutanhmc@gmail.com)
-
+  <img src="https://github-readme-stats.vercel.app/api?username=nhutanhmc&show_icons=true&theme=radical" alt="GitHub Stats" />
 </div>
 
+
+## 🌐 Connect with Me
+
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/nhutanhmc)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anh-nguyen-296b53333/)
+[![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:nhutanhmc@gmail.com)
+[![Facebook](https://img.shields.io/badge/-Facebook-1877F2?style=flat-square&logo=facebook&logoColor=white)](https://www.facebook.com/Xavia0205?locale=vi_VN)
+
+---
+
+<!-- ## 🏆 Featured Projects
+
+- **[Project Name 1]**: A short description of the project.
+- **[Project Name 2]**: A short description of the project.
+- **[Project Name 3]**: A short description of the project. -->
+
 ---
 
 <div align="center">
-
-### 💭 Random Dev Quote
-
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
-
-### 🐍 Contribution Graph
-
-![Snake animation](https://github.com/nhutanhmc/nhutanhmc/blob/output/github-contribution-grid-snake.svg)
-
----
-
-**⭐ From [nhutanhmc](https://github.com/nhutanhmc) with ❤️**
-
-*"The only way to do great work is to love what you do."* - Steve Jobs
-
+  <img src="https://komarev.com/ghpvc/?username=nhutanhmc&color=blueviolet" alt="Profile views" />
 </div>
