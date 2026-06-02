@@ -49,70 +49,93 @@
     .grid-lines {
       animation: scanline 4s infinite ease-in-out;
     }
+
+    /* 3D Scene perspective */
+    #player-scene {
+      perspective: 800px;
+      transform-style: preserve-3d;
+    }
+    .player-card {
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), stroke-opacity 0.6s ease;
+      transform-style: preserve-3d;
+      transform-origin: 250px 60px;
+      cursor: pointer;
+    }
+    .player-card:hover {
+      transform: rotateX(10deg) rotateY(-5deg) translateZ(10px);
+    }
+    
+    /* Parallax inner elements */
+    .parallax-item {
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .player-card:hover .parallax-item {
+      transform: translate(8px, 4px) translateZ(5px);
+    }
+    .player-card:hover .parallax-visualizer {
+      transform: translate(-8px, 4px) translateZ(5px);
+    }
   </style>
 
-  <!-- Player Background (Glassmorphism card - Blue theme border) -->
-  <rect width="500" height="120" rx="15" fill="#030712" stroke="#0077b6" stroke-width="1.5" stroke-opacity="0.8" />
-  
-  <!-- Subtle grid lines (sci-fi feel) -->
-  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1" class="grid-lines">
-    <line x1="20" y1="20" x2="480" y2="20" />
-    <line x1="20" y1="40" x2="480" y2="40" />
-    <line x1="20" y1="60" x2="480" y2="60" />
-    <line x1="20" y1="80" x2="480" y2="80" />
-    <line x1="20" y1="100" x2="480" y2="100" />
-  </g>
+  <g id="player-scene">
+    <!-- Player Background (Glassmorphism card) -->
+    <g class="player-card">
+      <rect width="500" height="120" rx="15" fill="#030712" stroke="#0077b6" stroke-width="1.5" stroke-opacity="0.8" filter="url(#glow-blue)" />
+      <rect width="500" height="120" rx="15" fill="none" stroke="#06b6d4" stroke-width="1" stroke-opacity="0.3" />
+      
+      <!-- Subtle grid lines (sci-fi feel) -->
+      <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1" class="grid-lines">
+        <line x1="20" y1="20" x2="480" y2="20" />
+        <line x1="20" y1="40" x2="480" y2="40" />
+        <line x1="20" y1="60" x2="480" y2="60" />
+        <line x1="20" y1="80" x2="480" y2="80" />
+        <line x1="20" y1="100" x2="480" y2="100" />
+      </g>
 
-  <!-- Album Art: Neon Grid Sunrise (Blue sun & grid) -->
-  <g transform="translate(20, 20)">
-    <!-- Album Border -->
-    <rect width="80" height="80" rx="10" fill="#080b18" stroke="#06b6d4" stroke-width="1.5" filter="url(#glow-cyan)" />
-    <!-- Glowing Sun -->
-    <circle cx="40" cy="45" r="22" fill="#0077b6" filter="url(#glow-blue)" />
-    <circle cx="40" cy="45" r="16" fill="#0096c7" />
-    <!-- Grid floor inside cover -->
-    <path d="M10,70 L70,70 M15,75 L65,75 M30,45 L10,80 M40,45 L40,80 M50,45 L70,80" stroke="#06b6d4" stroke-width="1" stroke-opacity="0.6"/>
-  </g>
+      <!-- Shifting inner Parallax content -->
+      <g class="parallax-item">
+        <!-- Album Art -->
+        <g transform="translate(20, 20)">
+          <rect width="80" height="80" rx="10" fill="#080b18" stroke="#06b6d4" stroke-width="1.5" filter="url(#glow-cyan)" />
+          <circle cx="40" cy="45" r="22" fill="#0077b6" filter="url(#glow-blue)" />
+          <circle cx="40" cy="45" r="16" fill="#0096c7" />
+          <path d="M10,70 L70,70 M15,75 L65,75 M30,45 L10,80 M40,45 L40,80 M50,45 L70,80" stroke="#06b6d4" stroke-width="1" stroke-opacity="0.6"/>
+        </g>
 
-  <!-- Track Info -->
-  <text x="120" y="42" font-family="'Courier New', monospace" font-size="15" font-weight="bold" fill="#06b6d4" filter="url(#glow-cyan)">CYBERPUNK_LOFI_SYSTEM.sh</text>
-  <text x="120" y="62" font-family="sans-serif" font-size="12" fill="#0096c7" filter="url(#glow-blue)">Channel: Coding Soundtrack</text>
+        <!-- Track Info -->
+        <text x="120" y="42" font-family="'Courier New', monospace" font-size="15" font-weight="bold" fill="#06b6d4" filter="url(#glow-cyan)">CYBERPUNK_LOFI_SYSTEM.sh</text>
+        <text x="120" y="62" font-family="sans-serif" font-size="12" fill="#0096c7" filter="url(#glow-blue)">Channel: Coding Soundtrack</text>
 
-  <!-- Playback controls -->
-  <g transform="translate(120, 76)" fill="none" stroke="#ffffff" stroke-opacity="0.8" stroke-width="2">
-    <!-- Prev -->
-    <path d="M0,8 L0,0 L-6,4 Z" fill="#ffffff" />
-    <line x1="-6" y1="0" x2="-6" y2="8" />
-    <!-- Play (glowing cyan circle) -->
-    <circle cx="25" cy="4" r="10" fill="#06b6d4" fill-opacity="0.2" stroke="#06b6d4" stroke-width="1.5" filter="url(#glow-cyan)" />
-    <polygon points="23,0 30,4 23,8" fill="#ffffff" stroke="none" />
-    <!-- Next -->
-    <path d="M50,0 L50,8 L56,4 Z" fill="#ffffff" />
-    <line x1="56" y1="0" x2="56" y2="8" />
-  </g>
+        <!-- Playback controls -->
+        <g transform="translate(120, 76)" fill="none" stroke="#ffffff" stroke-opacity="0.8" stroke-width="2">
+          <path d="M0,8 L0,0 L-6,4 Z" fill="#ffffff" />
+          <line x1="-6" y1="0" x2="-6" y2="8" />
+          <circle cx="25" cy="4" r="10" fill="#06b6d4" fill-opacity="0.2" stroke="#06b6d4" stroke-width="1.5" filter="url(#glow-cyan)" />
+          <polygon points="23,0 30,4 23,8" fill="#ffffff" stroke="none" />
+          <path d="M50,0 L50,8 L56,4 Z" fill="#ffffff" />
+          <line x1="56" y1="0" x2="56" y2="8" />
+        </g>
 
-  <!-- Playback Progress Bar (Blue theme) -->
-  <g transform="translate(200, 80)">
-    <!-- Track Line -->
-    <line x1="0" y1="0" x2="160" y2="0" stroke="#ffffff" stroke-opacity="0.2" stroke-width="4" stroke-linecap="round" />
-    <!-- Active Line -->
-    <line x1="0" y1="0" x2="110" y2="0" stroke="#0077b6" stroke-width="4" stroke-linecap="round" filter="url(#glow-blue)" />
-    <!-- Glowing Knob -->
-    <circle cx="110" cy="0" r="5" fill="#ffffff" filter="url(#glow-blue)" />
-    <!-- Time Tracker -->
-    <text x="170" y="4" font-family="monospace" font-size="10" fill="#ffffff" fill-opacity="0.6">02:45/04:12</text>
-  </g>
+        <!-- Playback Progress Bar -->
+        <g transform="translate(200, 80)">
+          <line x1="0" y1="0" x2="160" y2="0" stroke="#ffffff" stroke-opacity="0.2" stroke-width="4" stroke-linecap="round" />
+          <line x1="0" y1="0" x2="110" y2="0" stroke="#0077b6" stroke-width="4" stroke-linecap="round" filter="url(#glow-blue)" />
+          <circle cx="110" cy="0" r="5" fill="#ffffff" filter="url(#glow-blue)" />
+          <text x="170" y="4" font-family="monospace" font-size="10" fill="#ffffff" fill-opacity="0.6">02:45/04:12</text>
+        </g>
+      </g>
 
-  <!-- Bouncing Audio Visualizer (Far Right) -->
-  <g transform="translate(400, 70)">
-    <!-- Bottom line of visualizer -->
-    <line x1="0" y1="0" x2="70" y2="0" stroke="#06b6d4" stroke-opacity="0.3" stroke-width="1"/>
-    
-    <!-- Animated bars, growing upwards -->
-    <rect x="5" y="-45" width="6" height="45" rx="3" class="bar bar-1" />
-    <rect x="18" y="-45" width="6" height="45" rx="3" class="bar bar-2" />
-    <rect x="31" y="-45" width="6" height="45" rx="3" class="bar bar-3" />
-    <rect x="44" y="-45" width="6" height="45" rx="3" class="bar bar-4" />
-    <rect x="57" y="-45" width="6" height="45" rx="3" class="bar bar-5" />
+      <!-- Bouncing Audio Visualizer (Moving in parallax opposite direction) -->
+      <g class="parallax-visualizer" transform="translate(0,0)">
+        <g transform="translate(400, 70)">
+          <line x1="0" y1="0" x2="70" y2="0" stroke="#06b6d4" stroke-opacity="0.3" stroke-width="1"/>
+          <rect x="5" y="-45" width="6" height="45" rx="3" class="bar bar-1" />
+          <rect x="18" y="-45" width="6" height="45" rx="3" class="bar bar-2" />
+          <rect x="31" y="-45" width="6" height="45" rx="3" class="bar bar-3" />
+          <rect x="44" y="-45" width="6" height="45" rx="3" class="bar bar-4" />
+          <rect x="57" y="-45" width="6" height="45" rx="3" class="bar bar-5" />
+        </g>
+      </g>
+    </g>
   </g>
 </svg>
