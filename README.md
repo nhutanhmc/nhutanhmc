@@ -67,14 +67,14 @@ const developer = {
 </details>
 
 <!-- Command 2: ls -R /mainframe/workspace -->
-<details>
+<details open>
   <summary><b>📁 <code>xavia@cyberdeck ~ % ls -R /mainframe/workspace</code></b></summary>
   <br/>
   <details open>
     <summary><b>📁 nhutanhmc-deck/</b></summary>
     <blockquote>
       
-      <details>
+      <details open>
         <summary><b>📁 system_configs/</b></summary>
         <blockquote>
           <details>
@@ -110,7 +110,7 @@ echo "System shell successfully initialized for $ALIAS."
         </blockquote>
       </details>
 
-      <details>
+      <details open>
         <summary><b>📁 security_mainframe/</b></summary>
         <blockquote>
           <h4>🔓 SYSTEM BREACH PROTOCOL</h4>
@@ -257,7 +257,7 @@ echo "System shell successfully initialized for $ALIAS."
         </blockquote>
       </details>
 
-      <details>
+      <details open>
         <summary><b>📁 projects_depot/</b></summary>
         <blockquote>
           <p>Displaying key repositories and codebases active on this deck:</p>
@@ -295,7 +295,7 @@ echo "System shell successfully initialized for $ALIAS."
 </details>
 
 <!-- Command 3: nmap --scan-ports /mainframe/tech-orbit -->
-<details>
+<details open>
   <summary><b>🌌 <code>xavia@cyberdeck ~ % nmap --scan-ports /mainframe/tech-orbit</code></b></summary>
   <br/>
   <div align="center">
@@ -431,7 +431,7 @@ echo "System shell successfully initialized for $ALIAS."
 </details>
 
 <!-- Command 4: cat /sys/performance/metrics -->
-<details>
+<details open>
   <summary><b>📊 <code>xavia@cyberdeck ~ % cat /sys/performance/metrics</code></b></summary>
   <br/>
   
@@ -487,7 +487,7 @@ echo "System shell successfully initialized for $ALIAS."
 </details>
 
 <!-- Command 5: audio-player --stream /sys/audio/lofi_ambient -->
-<details>
+<details open>
   <summary><b>🎵 <code>xavia@cyberdeck ~ % audio-player --stream /sys/audio/lofi_ambient</code></b></summary>
   <br/>
   <div align="center">
@@ -565,7 +565,7 @@ echo "System shell successfully initialized for $ALIAS."
 </details>
 
 <!-- Command 6: mailto -t nhutanhmc@gmail.com -->
-<details>
+<details open>
   <summary><b>📫 <code>xavia@cyberdeck ~ % mailto -t nhutanhmc@gmail.com</code></b></summary>
   <br/>
   <h3 align="center">📡 ESTABLISH COMMUNICATIONS</h3>
