@@ -1,6 +1,9 @@
 name: Generate Snake
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: "0 */12 * * *" # Chạy mỗi 12 tiếng
   workflow_dispatch: # Cho phép kích hoạt thủ công từ giao diện Actions

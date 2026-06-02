@@ -1,6 +1,9 @@
 name: GitHub-Profile-3D-Contrib
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: "0 18 * * *" # Chạy vào lúc 01:00 AM giờ Việt Nam mỗi ngày
   workflow_dispatch: # Cho phép kích hoạt thủ công từ giao diện Actions

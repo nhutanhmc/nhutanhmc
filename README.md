@@ -1,10 +1,10 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:87CEEB,50:6B9BD1,100:4A90E2&height=240&section=header&text=Hi%20there!%20I'm%20Xavia%20👋&fontSize=60&fontColor=ffffff&animation=twinkling&fontAlignY=32&desc=Full-Stack%20Developer%20|%20Mobile%20Enthusiast%20|%20AI%20Explorer&descSize=22&descAlignY=55&descAlign=50" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:8b5cf6,50:ec4899,100:3b82f6&height=240&section=header&text=Hi%20there!%20I'm%20Xavia%20👋&fontSize=60&fontColor=ffffff&animation=twinkling&fontAlignY=32&desc=Full-Stack%20Developer%20|%20Mobile%20Enthusiast%20|%20AI%20Explorer&descSize=22&descAlignY=55&descAlign=50" width="100%"/>
 </div>
 
 <div align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=4A90E2&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=120&lines=const+developer+%3D+%7B;++name%3A+'Anh+Nguyen'%2C+role%3A+'Full-Stack+Developer'%2C;++location%3A+'Vietnam+🇻🇳'%2C+passion%3A+'Building+Amazing+Things+✨';%7D%3B" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3500&pause=1000&color=ec4899&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=100&lines=Hi+there!+I'm+Anh+Nguyen+👋;Full-Stack+Software+Developer;Passionate+about+AI+and+Mobile+Apps;Building+delightful+user+experiences+⚡" alt="Typing SVG" />
   </a>
 </div>
 
@@ -61,6 +61,8 @@ const anh: Developer = {
   <img src="./profile-3d-contrib/profile-night-view-animate.svg" width="100%" alt="3D Contribution Graph" style="border-radius: 12px;" />
 </div>
 
+<br/>
+
 <h2 align="center">🐍 Snake Contribution Game</h2>
 <div align="center">
   <picture>
@@ -103,10 +105,10 @@ const anh: Developer = {
   <table border="0" width="100%">
     <tr>
       <td align="center" width="50%">
-        <img src="https://github-readme-stats.vercel.app/api?username=nhutanhmc&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12&bg_color=0d1117" alt="GitHub Stats" width="100%" />
+        <img src="https://github-stats-extended.vercel.app/api?username=nhutanhmc&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12&bg_color=0d1117" alt="GitHub Stats" width="100%" />
       </td>
       <td align="center" width="50%">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nhutanhmc&layout=compact&theme=tokyonight&hide_border=true&border_radius=12&bg_color=0d1117&langs_count=6" alt="Top Languages" width="100%" />
+        <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=nhutanhmc&layout=compact&theme=tokyonight&hide_border=true&border_radius=12&bg_color=0d1117&langs_count=6" alt="Top Languages" width="100%" />
       </td>
     </tr>
     <tr>
@@ -179,7 +181,7 @@ const anh: Developer = {
         <p>Cross-platform mobile applications using Flutter & Native modules</p>
       </td>
       <td align="center" width="25%">
-        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Rocket.png" width="60" alt="Optimization" />
+        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" width="60" alt="Optimization" />
         <h4>Optimization</h4>
         <p>SEO ranking, speed audits, testing coverage & clean code structure</p>
       </td>
@@ -210,20 +212,6 @@ const anh: Developer = {
 
 ---
 
-<h2 align="center">🎨 Fun & Inspiration</h2>
-<div align="center">
-  <table border="0" width="100%">
-    <tr>
-      <td align="center" width="50%">
-        <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=nord&border=true&borderColor=4A90E2" alt="Dev Quote" width="100%" />
-      </td>
-      <td align="center" width="50%">
-        <img src="https://readme-jokes.vercel.app/api?theme=nord&hideBorder&borderColor=4A90E2" alt="Dev Joke" width="100%" />
-      </td>
-    </tr>
-  </table>
-</div>
-
 <h3 align="center">⚡ Fun Facts About Me</h3>
 <div align="center">
   <table border="0">
@@ -238,7 +226,7 @@ const anh: Developer = {
 ---
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:87CEEB,50:6B9BD1,100:4A90E2&height=120&section=footer&text=Thanks%20for%20visiting!%20⭐&fontSize=28&fontColor=ffffff&animation=twinkling&fontAlignY=70" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:8b5cf6,50:ec4899,100:3b82f6&height=120&section=footer&text=Thanks%20for%20visiting!%20⭐&fontSize=28&fontColor=ffffff&animation=twinkling&fontAlignY=70" width="100%"/>
   <p align="center">
     <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Heart%20Hands.png" width="30" />
     <b>Made with ❤️, lots of ☕, and countless commits</b>
