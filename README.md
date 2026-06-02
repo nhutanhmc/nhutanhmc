@@ -1,6 +1,6 @@
 <div align="center">
-  <!-- Custom 3D Cyberpunk Workspace Header Image (Blue Theme) -->
-  <img src="image/cyberpunk_workspace.png" alt="Xavia Workspace" width="100%" style="border-radius: 16px; box-shadow: 0px 8px 32px rgba(0, 180, 216, 0.25); border: 1px solid #00b4d8;" />
+  <!-- Custom 3D Coded Workspace Header SVG (Blue Theme) -->
+  <img src="image/cyberpunk_header.svg" alt="Xavia Cockpit Terminal" width="100%" style="border-radius: 16px; box-shadow: 0px 8px 32px rgba(0, 180, 216, 0.25); border: 1px solid #00b4d8;" />
   
   <br/><br/>
   
@@ -13,7 +13,7 @@
   <p>
     <img src="https://komarev.com/ghpvc/?username=nhutanhmc&label=Profile%20Views&color=00B4D8&style=for-the-badge" alt="Profile Views" />
     <img src="https://img.shields.io/github/followers/nhutanhmc?label=Followers&style=for-the-badge&color=00B4D8&labelColor=0f172a" alt="GitHub Followers" />
-    <img src="https://img.shields.io/github/stars/nhutanhmc?label=Stars&style=for-the-badge&color=00B4D8&labelColor=0f172a" alt="GitHub Stars" />
+    <img src="https://img.shields.io/github/stars/nhutanhmc?label=Stars&style=for-the-badge&color=06B6D4&labelColor=0f172a" alt="GitHub Stars" />
   </p>
 </div>
 
