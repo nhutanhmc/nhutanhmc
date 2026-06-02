@@ -1,6 +1,6 @@
 <div align="center">
-  <!-- Custom 3D Coded Workspace Header SVG (Blue Theme) -->
-  <img src="image/cyberpunk_header.svg" alt="Xavia Cockpit Terminal" width="100%" style="border-radius: 16px; box-shadow: 0px 8px 32px rgba(0, 180, 216, 0.25); border: 1px solid #00b4d8;" />
+  <!-- Custom Coded Cockpit Dashboard SVG (Blue Theme with Cache-Bust) -->
+  <img src="image/cyberpunk_header.svg?v=20" alt="Xavia Cyber Dashboard" width="100%" style="border-radius: 16px; box-shadow: 0px 8px 32px rgba(0, 180, 216, 0.25); border: 1px solid #00b4d8;" />
   
   <br/><br/>
   
@@ -13,7 +13,7 @@
   <p>
     <img src="https://komarev.com/ghpvc/?username=nhutanhmc&label=Profile%20Views&color=00B4D8&style=for-the-badge" alt="Profile Views" />
     <img src="https://img.shields.io/github/followers/nhutanhmc?label=Followers&style=for-the-badge&color=00B4D8&labelColor=0f172a" alt="GitHub Followers" />
-    <img src="https://img.shields.io/github/stars/nhutanhmc?label=Stars&style=for-the-badge&color=06B6D4&labelColor=0f172a" alt="GitHub Stars" />
+    <img src="https://img.shields.io/github/stars/nhutanhmc?label=Stars&style=for-06B6D4&labelColor=0f172a" alt="GitHub Stars" />
   </p>
 </div>
 
@@ -51,8 +51,8 @@ const developer = {
     </td>
     <td width="45%" valign="top" align="center">
       <br/><br/>
-      <!-- Interactive Developer GIF -->
-      <img src="https://raw.githubusercontent.com/devSouvik/devSouvik/master/gif3.gif" width="100%" style="border-radius: 12px; border: 2px solid #00b4d8; box-shadow: 0 4px 15px rgba(0, 180, 216, 0.15);" alt="Cybernetic Animation"/>
+      <!-- Interactive Developer Terminal -->
+      <img src="image/profile_terminal.svg?v=20" width="100%" style="border-radius: 10px; box-shadow: 0px 8px 32px rgba(0, 180, 216, 0.25); border: 1px solid #00b4d8;" alt="Cybernetic Terminal" />
     </td>
   </tr>
 </table>
@@ -61,8 +61,8 @@ const developer = {
 
 <h2 align="center">🌌 HOLOGRAPHIC TECH ORBIT</h2>
 <div align="center">
-  <!-- Interactive animated 3D Tech Orbit SVG (Blue Theme) -->
-  <img src="image/tech_orbit.svg" width="80%" alt="Tech Orbit" style="border-radius: 12px;" />
+  <!-- Interactive animated 3D Tech Orbit SVG (Blue Theme with Cache-Bust) -->
+  <img src="image/tech_orbit.svg?v=20" width="85%" alt="Tech Orbit" style="border-radius: 12px;" />
 </div>
 
 ---
@@ -341,8 +341,8 @@ const developer = {
 
 <h2 align="center">🎵 AUDIO PROTOCOL (SOUNDTRACK)</h2>
 <div align="center">
-  <!-- Interactive animated Cyberpunk Music Player SVG (Blue Theme) -->
-  <img src="image/music_player.svg" width="60%" alt="Audio Terminal" style="border-radius: 15px;" />
+  <!-- Interactive animated Cyberpunk Music Player SVG (Blue Theme with Cache-Bust) -->
+  <img src="image/music_player.svg?v=20" width="65%" alt="Audio Terminal" style="border-radius: 15px;" />
 </div>
 
 ---
