@@ -1,19 +1,19 @@
 <div align="center">
-  <!-- Custom 3D Cyberpunk Workspace Header Image -->
-  <img src="image/cyberpunk_workspace.png" alt="Xavia Workspace" width="100%" style="border-radius: 16px; box-shadow: 0px 8px 32px rgba(139, 92, 246, 0.25); border: 1px solid #8b5cf6;" />
+  <!-- Custom 3D Cyberpunk Workspace Header Image (Blue Theme) -->
+  <img src="image/cyberpunk_workspace.png" alt="Xavia Workspace" width="100%" style="border-radius: 16px; box-shadow: 0px 8px 32px rgba(0, 180, 216, 0.25); border: 1px solid #00b4d8;" />
   
   <br/><br/>
   
-  <!-- Typing SVG with URL encoding fixed -->
+  <!-- Typing SVG (Blue Theme) -->
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Inter&size=24&duration=3000&pause=1000&color=06B6D4&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=100&lines=Hi%20there!%20I'm%20Anh%20Nguyen%20%F0%9F%91%8B%3BFull-Stack%20Software%20Developer%3BPassionate%20about%20AI%20and%20Mobile%20Apps%3BBuilding%20delightful%20user%20experiences%20%E2%9A%A1" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Inter&size=24&duration=3000&pause=1000&color=00B4D8&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=100&lines=Hi%20there!%20I'm%20Anh%20Nguyen%20%F0%9F%91%8B%3BFull-Stack%20Software%20Developer%3BPassionate%20about%20AI%20and%20Mobile%20Apps%3BBuilding%20delightful%20user%20experiences%20%E2%9A%A1" alt="Typing SVG" />
   </a>
 
-  <!-- Sleek Cyber Badges -->
+  <!-- Sleek Blue Badges -->
   <p>
-    <img src="https://komarev.com/ghpvc/?username=nhutanhmc&label=Profile%20Views&color=06B6D4&style=for-the-badge" alt="Profile Views" />
-    <img src="https://img.shields.io/github/followers/nhutanhmc?label=Followers&style=for-the-badge&color=06B6D4&labelColor=0f172a" alt="GitHub Followers" />
-    <img src="https://img.shields.io/github/stars/nhutanhmc?label=Stars&style=for-the-badge&color=06B6D4&labelColor=0f172a" alt="GitHub Stars" />
+    <img src="https://komarev.com/ghpvc/?username=nhutanhmc&label=Profile%20Views&color=00B4D8&style=for-the-badge" alt="Profile Views" />
+    <img src="https://img.shields.io/github/followers/nhutanhmc?label=Followers&style=for-the-badge&color=00B4D8&labelColor=0f172a" alt="GitHub Followers" />
+    <img src="https://img.shields.io/github/stars/nhutanhmc?label=Stars&style=for-the-badge&color=00B4D8&labelColor=0f172a" alt="GitHub Stars" />
   </p>
 </div>
 
@@ -52,22 +52,192 @@ const developer = {
     <td width="45%" valign="top" align="center">
       <br/><br/>
       <!-- Interactive Developer GIF -->
-      <img src="https://raw.githubusercontent.com/devSouvik/devSouvik/master/gif3.gif" width="100%" style="border-radius: 12px; border: 2px solid #06b6d4; box-shadow: 0 4px 15px rgba(6, 182, 212, 0.15);" alt="Cybernetic Animation"/>
+      <img src="https://raw.githubusercontent.com/devSouvik/devSouvik/master/gif3.gif" width="100%" style="border-radius: 12px; border: 2px solid #00b4d8; box-shadow: 0 4px 15px rgba(0, 180, 216, 0.15);" alt="Cybernetic Animation"/>
     </td>
   </tr>
 </table>
 
 ---
 
+<h2 align="center">🌌 HOLOGRAPHIC TECH ORBIT</h2>
+<div align="center">
+  <!-- Interactive animated 3D Tech Orbit SVG (Blue Theme) -->
+  <img src="image/tech_orbit.svg" width="80%" alt="Tech Orbit" style="border-radius: 12px;" />
+</div>
+
+---
+
+<h2 align="center">🛠️ Tech Stack & Expertise</h2>
+
+<div align="center">
+
+### 💻 Languages & Core Technologies
+
+<table>
+<tr>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=js" width="48" height="48" alt="JavaScript" />
+<br>JavaScript
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=ts" width="48" height="48" alt="TypeScript" />
+<br>TypeScript
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=java" width="48" height="48" alt="Java" />
+<br>Java
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=dart" width="48" height="48" alt="Dart" />
+<br>Dart
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=html" width="48" height="48" alt="HTML5" />
+<br>HTML5
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=css" width="48" height="48" alt="CSS3" />
+<br>CSS3
+</td>
+</tr>
+</table>
+
+### 🚀 Frontend Frameworks & Libraries
+
+<table>
+<tr>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=react" width="48" height="48" alt="React" />
+<br>React
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=nextjs" width="48" height="48" alt="Next.js" />
+<br>Next.js
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=vue" width="48" height="48" alt="Vue.js" />
+<br>Vue.js
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=flutter" width="48" height="48" alt="Flutter" />
+<br>Flutter
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=tailwind" width="48" height="48" alt="Tailwind" />
+<br>Tailwind
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=sass" width="48" height="48" alt="Sass" />
+<br>Sass
+</td>
+</tr>
+</table>
+
+### ⚙️ Backend & Server Technologies
+
+<table>
+<tr>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=nodejs" width="48" height="48" alt="Node.js" />
+<br>Node.js
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=express" width="48" height="48" alt="Express" />
+<br>Express
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=spring" width="48" height="48" alt="Spring" />
+<br>Spring Boot
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=graphql" width="48" height="48" alt="GraphQL" />
+<br>GraphQL
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=prisma" width="48" height="48" alt="Prisma" />
+<br>Prisma
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=nestjs" width="48" height="48" alt="NestJS" />
+<br>NestJS
+</td>
+</tr>
+</table>
+
+### 🗄️ Databases & Storage
+
+<table>
+<tr>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=mongodb" width="48" height="48" alt="MongoDB" />
+<br>MongoDB
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=postgresql" width="48" height="48" alt="PostgreSQL" />
+<br>PostgreSQL
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=mysql" width="48" height="48" alt="MySQL" />
+<br>MySQL
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=redis" width="48" height="48" alt="Redis" />
+<br>Redis
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=firebase" width="48" height="48" alt="Firebase" />
+<br>Firebase
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=supabase" width="48" height="48" alt="Supabase" />
+<br>Supabase
+</td>
+</tr>
+</table>
+
+### ☁️ DevOps & Cloud Services
+
+<table>
+<tr>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=docker" width="48" height="48" alt="Docker" />
+<br>Docker
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=git" width="48" height="48" alt="Git" />
+<br>Git
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=github" width="48" height="48" alt="GitHub" />
+<br>GitHub
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=vercel" width="48" height="48" alt="Vercel" />
+<br>Vercel
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=aws" width="48" height="48" alt="AWS" />
+<br>AWS
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=vscode" width="48" height="48" alt="VS Code" />
+<br>VS Code
+</td>
+</tr>
+</table>
+
+</div>
+
+---
+
 <h2 align="center">🔮 3D CONTRIBUTION LANDSCAPE</h2>
 <div align="center">
-  <!-- Night Rainbow 3D graph (using correct name that exists) -->
-  <img src="profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D Contribution Graph" style="border-radius: 12px; border: 1px solid #1e293b;" />
+  <img src="profile-3d-contrib/profile-night-view.svg" width="100%" alt="3D Contribution Graph" style="border-radius: 12px; border: 1px solid #1e293b;" />
 </div>
 
 <br/>
 
-<h2 align="center">🐍 SNAKE CONTRIBUTION GRID</h2>
+<h2 align="center">🐍 BLUE SNAKE CONTRIBUTION GRID</h2>
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="dist/github-contribution-grid-snake-dark.svg" />
@@ -78,36 +248,28 @@ const developer = {
 
 ---
 
-<h2 align="center">🛠️ TECH ORBIT MATRIX</h2>
-<div align="center">
-  <!-- Interactive animated 3D Tech Orbit SVG -->
-  <img src="image/tech_orbit.svg" width="80%" alt="Tech Orbit" style="border-radius: 12px;" />
-</div>
-
----
-
 <h2 align="center">📊 PERFORMANCE METRICS</h2>
 <div align="center">
   <table border="0" width="100%">
     <tr>
       <td align="center" width="50%">
-        <img src="https://github-stats-extended.vercel.app/api?username=nhutanhmc&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12&bg_color=0d1117" alt="GitHub Stats" width="100%" />
+        <img src="https://github-stats-extended.vercel.app/api?username=nhutanhmc&show_icons=true&title_color=00b4d8&icon_color=00b4d8&text_color=ffffff&bg_color=0d1117&hide_border=true&border_radius=12" alt="GitHub Stats" width="100%" />
       </td>
       <td align="center" width="50%">
-        <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=nhutanhmc&layout=compact&theme=tokyonight&hide_border=true&border_radius=12&bg_color=0d1117&langs_count=6" alt="Top Languages" width="100%" />
+        <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=nhutanhmc&layout=compact&title_color=00b4d8&icon_color=00b4d8&text_color=ffffff&bg_color=0d1117&hide_border=true&border_radius=12&langs_count=6" alt="Top Languages" width="100%" />
       </td>
     </tr>
     <tr>
       <td align="center" width="50%">
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=nhutanhmc&theme=tokyonight&hide_border=true&border_radius=12&background=0d1117" alt="GitHub Streak" width="100%" />
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=nhutanhmc&theme=tokyonight&hide_border=true&border_radius=12&background=0d1117&ring=00b4d8&fire=00b4d8&currStreakLabel=00b4d8" alt="GitHub Streak" width="100%" />
       </td>
       <td align="center" width="50%">
-        <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=nhutanhmc&theme=nord_dark&utcOffset=7" alt="Productive Time" width="100%" />
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=nhutanhmc&theme=nightowl&utcOffset=7" alt="Productive Time" width="100%" />
       </td>
     </tr>
   </table>
   <br/>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=nhutanhmc&bg_color=0d1117&color=87CEEB&line=4A90E2&point=ffffff&area=true&hide_border=true&custom_title=Contribution%20Activity%20Graph&radius=12" width="100%" alt="Contribution Graph"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=nhutanhmc&bg_color=0d1117&color=00b4d8&line=0077b6&point=ffffff&area=true&hide_border=true&custom_title=Contribution%20Activity%20Graph&radius=12" width="100%" alt="Contribution Graph"/>
 </div>
 
 ---
@@ -147,9 +309,39 @@ const developer = {
 
 ---
 
+<h2 align="center">💡 SERVICE MATRIX (WHAT I DO)</h2>
+<div align="center">
+  <table width="100%">
+    <tr>
+      <td align="center" width="25%">
+        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Objects/Desktop%20Computer.png" width="60" alt="Frontend" />
+        <h4>Frontend</h4>
+        <p>Interactive web interfaces, responsive modules, and responsive layout styling</p>
+      </td>
+      <td align="center" width="25%">
+        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Objects/Gear.png" width="60" alt="Backend" />
+        <h4>Backend</h4>
+        <p>Highly scalable API interfaces, backend servers, and database integration</p>
+      </td>
+      <td align="center" width="25%">
+        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Objects/Mobile%20Phone.png" width="60" alt="Mobile" />
+        <h4>Mobile</h4>
+        <p>Cross-platform application packaging using Flutter with native speed</p>
+      </td>
+      <td align="center" width="25%">
+        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" width="60" alt="Optimization" />
+        <h4>Optimization</h4>
+        <p>SEO index tuning, load balancing, speed profiling, and high code quality</p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+---
+
 <h2 align="center">🎵 AUDIO PROTOCOL (SOUNDTRACK)</h2>
 <div align="center">
-  <!-- Interactive animated Cyberpunk Music Player SVG -->
+  <!-- Interactive animated Cyberpunk Music Player SVG (Blue Theme) -->
   <img src="image/music_player.svg" width="60%" alt="Audio Terminal" style="border-radius: 15px;" />
 </div>
 
@@ -157,10 +349,10 @@ const developer = {
 
 <h2 align="center">📫 ESTABLISH COMMUNICATIONS</h2>
 <p align="center">
-  <a href="https://github.com/nhutanhmc" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=4A90E2" alt="GitHub"/></a>
-  <a href="https://www.linkedin.com/in/anh-nguyen-296b53333/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0077B5&color=4A90E2" alt="LinkedIn"/></a>
-  <a href="https://www.facebook.com/Xavia0205?locale=vi_VN" target="_blank"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white&labelColor=1877F2&color=4A90E2" alt="Facebook"/></a>
-  <a href="mailto:nhutanhmc@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=D14836&color=4A90E2" alt="Gmail"/></a>
+  <a href="https://github.com/nhutanhmc" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=00B4D8" alt="GitHub"/></a>
+  <a href="https://www.linkedin.com/in/anh-nguyen-296b53333/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0077B5&color=00B4D8" alt="LinkedIn"/></a>
+  <a href="https://www.facebook.com/Xavia0205?locale=vi_VN" target="_blank"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white&labelColor=1877F2&color=00B4D8" alt="Facebook"/></a>
+  <a href="mailto:nhutanhmc@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=D14836&color=00B4D8" alt="Gmail"/></a>
 </p>
 
 <div align="center">
@@ -190,7 +382,7 @@ const developer = {
 ---
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:8b5cf6,50:ec4899,100:3b82f6&height=120&section=footer&text=Thanks%20for%20visiting!%20⭐&fontSize=28&fontColor=ffffff&animation=twinkling&fontAlignY=70" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:03045e,50:0077b6,100:00e5ff&height=120&section=footer&text=Thanks%20for%20visiting!%20⭐&fontSize=28&fontColor=ffffff&animation=twinkling&fontAlignY=70" width="100%"/>
   <p align="center">
     <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Hand%20gestures/Heart%20Hands.png" width="30" />
     <b>Made with ❤️, lots of ☕, and countless commits</b>
