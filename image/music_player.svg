@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" width="100%" height="100%">
+  <defs>
+    <!-- Glow Filters -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur1" />
+      <feGaussianBlur stdDeviation="6" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="glow-pink" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur1" />
+      <feGaussianBlur stdDeviation="6" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    /* Bouncing Visualizer Animations */
+    @keyframes bounce-1 { 0%, 100% { height: 10px; } 50% { height: 35px; } }
+    @keyframes bounce-2 { 0%, 100% { height: 15px; } 50% { height: 45px; } }
+    @keyframes bounce-3 { 0%, 100% { height: 8px;  } 50% { height: 28px; } }
+    @keyframes bounce-4 { 0%, 100% { height: 20px; } 50% { height: 48px; } }
+    @keyframes bounce-5 { 0%, 100% { height: 12px; } 50% { height: 38px; } }
+
+    .bar {
+      fill: #06b6d4;
+      filter: url(#glow-cyan);
+      transform-origin: bottom;
+    }
+    .bar-1 { animation: bounce-1 1.0s ease-in-out infinite; }
+    .bar-2 { animation: bounce-2 1.3s ease-in-out infinite; }
+    .bar-3 { animation: bounce-3 0.8s ease-in-out infinite; }
+    .bar-4 { animation: bounce-4 1.5s ease-in-out infinite; }
+    .bar-5 { animation: bounce-5 1.1s ease-in-out infinite; }
+
+    /* Scanline pulse effect */
+    @keyframes scanline {
+      0% { opacity: 0.1; }
+      50% { opacity: 0.25; }
+      100% { opacity: 0.1; }
+    }
+    .grid-lines {
+      animation: scanline 4s infinite ease-in-out;
+    }
+  </style>
+
+  <!-- Player Background (Glassmorphism card) -->
+  <rect width="500" height="120" rx="15" fill="#0c071a" stroke="#ec4899" stroke-width="1.5" stroke-opacity="0.8" />
+  
+  <!-- Subtle grid lines (sci-fi feel) -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1" class="grid-lines">
+    <line x1="20" y1="20" x2="480" y2="20" />
+    <line x1="20" y1="40" x2="480" y2="40" />
+    <line x1="20" y1="60" x2="480" y2="60" />
+    <line x1="20" y1="80" x2="480" y2="80" />
+    <line x1="20" y1="100" x2="480" y2="100" />
+  </g>
+
+  <!-- Album Art: Neon Grid Sunrise -->
+  <g transform="translate(20, 20)">
+    <!-- Album Border -->
+    <rect width="80" height="80" rx="10" fill="#140c2b" stroke="#06b6d4" stroke-width="1.5" filter="url(#glow-cyan)" />
+    <!-- Glowing Sun -->
+    <circle cx="40" cy="45" r="22" fill="#ec4899" filter="url(#glow-pink)" />
+    <circle cx="40" cy="45" r="16" fill="#f43f5e" />
+    <!-- Grid floor inside cover -->
+    <path d="M10,70 L70,70 M15,75 L65,75 M30,45 L10,80 M40,45 L40,80 M50,45 L70,80" stroke="#06b6d4" stroke-width="1" stroke-opacity="0.6"/>
+  </g>
+
+  <!-- Track Info -->
+  <text x="120" y="42" font-family="'Courier New', monospace" font-size="15" font-weight="bold" fill="#06b6d4" filter="url(#glow-cyan)">CYBERPUNK_LOFI_SYSTEM.sh</text>
+  <text x="120" y="62" font-family="sans-serif" font-size="12" fill="#ec4899" filter="url(#glow-pink)">Channel: Coding Soundtrack</text>
+
+  <!-- Playback controls -->
+  <g transform="translate(120, 76)" fill="none" stroke="#ffffff" stroke-opacity="0.8" stroke-width="2">
+    <!-- Prev -->
+    <path d="M0,8 L0,0 L-6,4 Z" fill="#ffffff" />
+    <line x1="-6" y1="0" x2="-6" y2="8" />
+    <!-- Play (glowing cyan circle) -->
+    <circle cx="25" cy="4" r="10" fill="#06b6d4" fill-opacity="0.2" stroke="#06b6d4" stroke-width="1.5" filter="url(#glow-cyan)" />
+    <polygon points="23,0 30,4 23,8" fill="#ffffff" stroke="none" />
+    <!-- Next -->
+    <path d="M50,0 L50,8 L56,4 Z" fill="#ffffff" />
+    <line x1="56" y1="0" x2="56" y2="8" />
+  </g>
+
+  <!-- Playback Progress Bar -->
+  <g transform="translate(200, 80)">
+    <!-- Track Line -->
+    <line x1="0" y1="0" x2="160" y2="0" stroke="#ffffff" stroke-opacity="0.2" stroke-width="4" stroke-linecap="round" />
+    <!-- Active Line -->
+    <line x1="0" y1="0" x2="110" y2="0" stroke="#ec4899" stroke-width="4" stroke-linecap="round" filter="url(#glow-pink)" />
+    <!-- Glowing Knob -->
+    <circle cx="110" cy="0" r="5" fill="#ffffff" filter="url(#glow-pink)" />
+    <!-- Time Tracker -->
+    <text x="170" y="4" font-family="monospace" font-size="10" fill="#ffffff" fill-opacity="0.6">02:45/04:12</text>
+  </g>
+
+  <!-- Bouncing Audio Visualizer (Far Right) -->
+  <g transform="translate(400, 70)">
+    <!-- Bottom line of visualizer -->
+    <line x1="0" y1="0" x2="70" y2="0" stroke="#06b6d4" stroke-opacity="0.3" stroke-width="1"/>
+    
+    <!-- Animated bars, growing upwards (using scaleY or negative height with translate) -->
+    <!-- We position them at x locations and use negative heights to extend them upwards -->
+    <rect x="5" y="-45" width="6" height="45" rx="3" class="bar bar-1" />
+    <rect x="18" y="-45" width="6" height="45" rx="3" class="bar bar-2" />
+    <rect x="31" y="-45" width="6" height="45" rx="3" class="bar bar-3" />
+    <rect x="44" y="-45" width="6" height="45" rx="3" class="bar bar-4" />
+    <rect x="57" y="-45" width="6" height="45" rx="3" class="bar bar-5" />
+  </g>
+</svg>

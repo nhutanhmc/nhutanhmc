@@ -78,28 +78,10 @@ const developer = {
 
 ---
 
-<h2 align="center">🛠️ TECH MATRIX</h2>
+<h2 align="center">🛠️ TECH ORBIT MATRIX</h2>
 <div align="center">
-  <table border="0">
-    <tr>
-      <td align="center" width="160"><b>FRONTEND & UI</b></td>
-      <td>
-        <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,vue,tailwind,sass" alt="Frontend Stack" />
-      </td>
-    </tr>
-    <tr>
-      <td align="center" width="160"><b>BACKEND & DATA</b></td>
-      <td>
-        <img src="https://skillicons.dev/icons?i=nodejs,express,nestjs,spring,graphql,prisma,mongodb,postgresql,mysql,redis" alt="Backend Stack" />
-      </td>
-    </tr>
-    <tr>
-      <td align="center" width="160"><b>MOBILE & DEVOPS</b></td>
-      <td>
-        <img src="https://skillicons.dev/icons?i=dart,flutter,docker,firebase,supabase,git,github,vercel,aws,vscode" alt="Mobile/Cloud Stack" />
-      </td>
-    </tr>
-  </table>
+  <!-- Interactive animated 3D Tech Orbit SVG -->
+  <img src="image/tech_orbit.svg" width="80%" alt="Tech Orbit" style="border-radius: 12px;" />
 </div>
 
 ---
@@ -165,32 +147,10 @@ const developer = {
 
 ---
 
-<h2 align="center">💡 SERVICE MATRIX (WHAT I DO)</h2>
+<h2 align="center">🎵 AUDIO PROTOCOL (SOUNDTRACK)</h2>
 <div align="center">
-  <table width="100%">
-    <tr>
-      <td align="center" width="25%">
-        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Desktop%20Computer.png" width="60" alt="Frontend" />
-        <h4>Frontend</h4>
-        <p>Interactive web interfaces, responsive modules, and responsive layout styling</p>
-      </td>
-      <td align="center" width="25%">
-        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Gear.png" width="60" alt="Backend" />
-        <h4>Backend</h4>
-        <p>Highly scalable API interfaces, backend servers, and database integration</p>
-      </td>
-      <td align="center" width="25%">
-        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Mobile%20Phone.png" width="60" alt="Mobile" />
-        <h4>Mobile</h4>
-        <p>Cross-platform application packaging using Flutter with native speed</p>
-      </td>
-      <td align="center" width="25%">
-        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" width="60" alt="Optimization" />
-        <h4>Optimization</h4>
-        <p>SEO index tuning, load balancing, speed profiling, and high code quality</p>
-      </td>
-    </tr>
-  </table>
+  <!-- Interactive animated Cyberpunk Music Player SVG -->
+  <img src="image/music_player.svg" width="60%" alt="Audio Terminal" style="border-radius: 15px;" />
 </div>
 
 ---
@@ -206,10 +166,10 @@ const developer = {
 <div align="center">
   <table border="0">
     <tr>
-      <td align="center" width="25%"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" width="35" /><br>Collaborations</td>
-      <td align="center" width="25%"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Laptop.png" width="35" /><br>Freelance Work</td>
-      <td align="center" width="25%"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Light%20Bulb.png" width="35" /><br>Tech Discussions</td>
-      <td align="center" width="25%"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Nerd%20Face.png" width="35" /><br>Mentoring</td>
+      <td align="center" width="25%"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Hand%20gestures/Handshake.png" width="35" /><br>Collaborations</td>
+      <td align="center" width="25%"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Objects/Laptop.png" width="35" /><br>Freelance Work</td>
+      <td align="center" width="25%"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Objects/Light%20Bulb.png" width="35" /><br>Tech Discussions</td>
+      <td align="center" width="25%"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Smilies/Nerd%20Face.png" width="35" /><br>Mentoring</td>
     </tr>
   </table>
 </div>
@@ -232,9 +192,9 @@ const developer = {
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:8b5cf6,50:ec4899,100:3b82f6&height=120&section=footer&text=Thanks%20for%20visiting!%20⭐&fontSize=28&fontColor=ffffff&animation=twinkling&fontAlignY=70" width="100%"/>
   <p align="center">
-    <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Heart%20Hands.png" width="30" />
+    <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Hand%20gestures/Heart%20Hands.png" width="30" />
     <b>Made with ❤️, lots of ☕, and countless commits</b>
-    <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Heart%20Hands.png" width="30" />
+    <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/master/Emojis/Hand%20gestures/Heart%20Hands.png" width="30" />
   </p>
   <p align="center">
     <i>⭐ If you like my work, don't forget to star my repositories! ⭐</i>

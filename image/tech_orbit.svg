@@ -1,0 +1,274 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%">
+  <defs>
+    <!-- Intense Glow Filters -->
+    <filter id="glow-cyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur1" />
+      <feGaussianBlur stdDeviation="12" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="glow-pink" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur1" />
+      <feGaussianBlur stdDeviation="12" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="glow-purple" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur1" />
+      <feGaussianBlur stdDeviation="16" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Gradients -->
+    <radialGradient id="bg-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1e1b4b" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#090514" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="core-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#ec4899" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    /* Keyframe Animations */
+    @keyframes spin-cw {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes spin-ccw {
+      0% { transform: rotate(360deg); }
+      100% { transform: rotate(0deg); }
+    }
+    @keyframes pulse-core {
+      0% { transform: scale(1); opacity: 0.9; }
+      50% { transform: scale(1.15); opacity: 1; filter: drop-shadow(0 0 15px #8b5cf6); }
+      100% { transform: scale(1); opacity: 0.9; }
+    }
+    @keyframes float-hologram {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    @keyframes dash-orbit {
+      to { stroke-dashoffset: -40; }
+    }
+
+    /* Animation Classes */
+    .spin-cw {
+      animation: spin-cw 25s linear infinite;
+      transform-origin: 500px 300px;
+    }
+    .spin-ccw {
+      animation: spin-ccw 35s linear infinite;
+      transform-origin: 500px 300px;
+    }
+    .spin-cw-fast {
+      animation: spin-cw 18s linear infinite;
+      transform-origin: 500px 300px;
+    }
+    
+    /* Counter-rotations to keep icons upright */
+    .counter-spin-cw {
+      animation: spin-ccw 25s linear infinite;
+    }
+    .counter-spin-ccw {
+      animation: spin-cw 35s linear infinite;
+    }
+    .counter-spin-cw-fast {
+      animation: spin-ccw 18s linear infinite;
+    }
+    
+    .pulse-core {
+      animation: pulse-core 4s ease-in-out infinite;
+      transform-origin: 500px 300px;
+    }
+    .float-hologram {
+      animation: float-hologram 6s ease-in-out infinite;
+    }
+    .orbit-line {
+      stroke-dasharray: 8 6;
+      animation: dash-orbit 10s linear infinite;
+    }
+    
+    /* Hover Effects */
+    .interactive-icon {
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .interactive-icon:hover {
+      filter: brightness(1.3) drop-shadow(0 0 10px #06b6d4);
+      scale: 1.2;
+    }
+  </style>
+
+  <!-- Deep Space Dark Background Glow -->
+  <rect width="100%" height="100%" fill="#090514" />
+  <circle cx="500" cy="300" r="450" fill="url(#bg-glow)" />
+
+  <!-- Sci-Fi HUD grid lines -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <line x1="100" y1="300" x2="900" y2="300" />
+    <line x1="500" y1="50" x2="500" y2="550" />
+    <circle cx="500" cy="300" r="400" fill="none" />
+    <circle cx="500" cy="300" r="250" fill="none" />
+    <circle cx="500" cy="300" r="120" fill="none" />
+  </g>
+
+  <!-- Holographic 3D Isometric View Container (Scale Y to project circles as 3D ellipses) -->
+  <g transform="translate(0, 0) scale(1, 0.45)" class="float-hologram">
+    
+    <!-- === OUTER ORBIT (AWS, Docker, Firebase, Supabase) === -->
+    <ellipse cx="500" cy="666" rx="420" ry="420" fill="none" stroke="#06b6d4" stroke-width="1.5" stroke-opacity="0.5" class="orbit-line" />
+    
+    <g class="spin-ccw">
+      <!-- AWS (Outer top) -->
+      <g transform="translate(500, 246)">
+        <g class="counter-spin-ccw interactive-icon" transform="scale(1, 2.22)">
+          <rect x="-24" y="-24" width="48" height="48" rx="10" fill="#0f172a" stroke="#06b6d4" stroke-width="1.5" filter="url(#glow-cyan)"/>
+          <!-- AWS Cloud Path -->
+          <path d="M-10,8 C-14,8 -16,5 -14,1 C-13,-2 -9,-3 -8,-3 C-7,-7 -3,-9 1,-7 C4,-5 5,-2 5,-2 C7,-4 11,-3 12,0 C14,3 12,8 8,8 Z" fill="none" stroke="#06b6d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+      </g>
+
+      <!-- Docker (Outer right) -->
+      <g transform="translate(920, 666)">
+        <g class="counter-spin-ccw interactive-icon" transform="scale(1, 2.22)">
+          <rect x="-24" y="-24" width="48" height="48" rx="10" fill="#0f172a" stroke="#06b6d4" stroke-width="1.5" filter="url(#glow-cyan)"/>
+          <!-- Docker Whale representation -->
+          <rect x="-10" y="-8" width="6" height="5" fill="none" stroke="#06b6d4" stroke-width="1.5"/>
+          <rect x="-3" y="-8" width="6" height="5" fill="none" stroke="#06b6d4" stroke-width="1.5"/>
+          <rect x="4" y="-8" width="6" height="5" fill="none" stroke="#06b6d4" stroke-width="1.5"/>
+          <path d="M-15,4 C-10,4 -7,1 2,1 C8,1 12,4 14,0 C14,-3 11,-4 10,-4 C7,-4 6,-1 2,-1 C-3,-1 -6,-4 -12,-4 C-15,-4 -16,-1 -16,1 Z" fill="none" stroke="#06b6d4" stroke-width="1.5"/>
+        </g>
+      </g>
+
+      <!-- Firebase (Outer bottom) -->
+      <g transform="translate(500, 1086)">
+        <g class="counter-spin-ccw interactive-icon" transform="scale(1, 2.22)">
+          <rect x="-24" y="-24" width="48" height="48" rx="10" fill="#0f172a" stroke="#06b6d4" stroke-width="1.5" filter="url(#glow-cyan)"/>
+          <!-- Flame Path -->
+          <path d="M-10,10 L8,10 L-6,-10 L-12,2 Z" fill="none" stroke="#06b6d4" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M-6,2 L6,10 L1,-4 Z" fill="none" stroke="#06b6d4" stroke-width="1.5" stroke-linejoin="round"/>
+        </g>
+      </g>
+
+      <!-- Supabase (Outer left) -->
+      <g transform="translate(80, 666)">
+        <g class="counter-spin-ccw interactive-icon" transform="scale(1, 2.22)">
+          <rect x="-24" y="-24" width="48" height="48" rx="10" fill="#0f172a" stroke="#06b6d4" stroke-width="1.5" filter="url(#glow-cyan)"/>
+          <!-- Lightning/Supabase Logo -->
+          <path d="M-8,-12 L6,-12 L-4,2 L8,2 L-6,14 L-2,0 L-10,0 Z" fill="none" stroke="#06b6d4" stroke-width="2" stroke-linejoin="round"/>
+        </g>
+      </g>
+    </g>
+
+
+    <!-- === MIDDLE ORBIT (React, Next.js, Vue, Flutter) === -->
+    <ellipse cx="500" cy="666" rx="280" ry="280" fill="none" stroke="#ec4899" stroke-width="1.5" stroke-opacity="0.5" class="orbit-line" />
+    
+    <g class="spin-cw">
+      <!-- React (Middle top) -->
+      <g transform="translate(500, 386)">
+        <g class="counter-spin-cw interactive-icon" transform="scale(1, 2.22)">
+          <rect x="-24" y="-24" width="48" height="48" rx="10" fill="#0f172a" stroke="#ec4899" stroke-width="1.5" filter="url(#glow-pink)"/>
+          <!-- Atom Orbit Shapes -->
+          <ellipse cx="0" cy="0" rx="15" ry="6" fill="none" stroke="#ec4899" stroke-width="1.5" transform="rotate(30)"/>
+          <ellipse cx="0" cy="0" rx="15" ry="6" fill="none" stroke="#ec4899" stroke-width="1.5" transform="rotate(90)"/>
+          <ellipse cx="0" cy="0" rx="15" ry="6" fill="none" stroke="#ec4899" stroke-width="1.5" transform="rotate(150)"/>
+          <circle cx="0" cy="0" r="3" fill="#ec4899"/>
+        </g>
+      </g>
+
+      <!-- Next.js (Middle right) -->
+      <g transform="translate(780, 666)">
+        <g class="counter-spin-cw interactive-icon" transform="scale(1, 2.22)">
+          <rect x="-24" y="-24" width="48" height="48" rx="10" fill="#0f172a" stroke="#ec4899" stroke-width="1.5" filter="url(#glow-pink)"/>
+          <text x="0" y="6" font-family="'Courier New', monospace" font-size="20" font-weight="bold" fill="#ec4899" text-anchor="middle">N</text>
+        </g>
+      </g>
+
+      <!-- Vue.js (Middle bottom) -->
+      <g transform="translate(500, 946)">
+        <g class="counter-spin-cw interactive-icon" transform="scale(1, 2.22)">
+          <rect x="-24" y="-24" width="48" height="48" rx="10" fill="#0f172a" stroke="#ec4899" stroke-width="1.5" filter="url(#glow-pink)"/>
+          <!-- Triangle V shape -->
+          <polygon points="-12,-10 0,10 12,-10 7,-10 0,3 -7,-10" fill="none" stroke="#ec4899" stroke-width="1.5"/>
+        </g>
+      </g>
+
+      <!-- Flutter (Middle left) -->
+      <g transform="translate(220, 666)">
+        <g class="counter-spin-cw interactive-icon" transform="scale(1, 2.22)">
+          <rect x="-24" y="-24" width="48" height="48" rx="10" fill="#0f172a" stroke="#ec4899" stroke-width="1.5" filter="url(#glow-pink)"/>
+          <!-- Chevrons -->
+          <path d="M-8,-10 L4,2 L-8,14 M2,-10 L12,0 L4,8" fill="none" stroke="#ec4899" stroke-width="2" stroke-linecap="round"/>
+        </g>
+      </g>
+    </g>
+
+
+    <!-- === INNER ORBIT (JS, TS, Node, Dart) === -->
+    <ellipse cx="500" cy="666" rx="150" ry="150" fill="none" stroke="#8b5cf6" stroke-width="1.5" stroke-opacity="0.6" class="orbit-line" />
+    
+    <g class="spin-cw-fast">
+      <!-- TypeScript -->
+      <g transform="translate(500, 516)">
+        <g class="counter-spin-cw-fast interactive-icon" transform="scale(1, 2.22)">
+          <rect x="-20" y="-20" width="40" height="40" rx="8" fill="#0f172a" stroke="#8b5cf6" stroke-width="1.5" filter="url(#glow-purple)"/>
+          <text x="0" y="6" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#8b5cf6" text-anchor="middle">TS</text>
+        </g>
+      </g>
+
+      <!-- JavaScript -->
+      <g transform="translate(650, 666)">
+        <g class="counter-spin-cw-fast interactive-icon" transform="scale(1, 2.22)">
+          <rect x="-20" y="-20" width="40" height="40" rx="8" fill="#0f172a" stroke="#8b5cf6" stroke-width="1.5" filter="url(#glow-purple)"/>
+          <text x="0" y="6" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#8b5cf6" text-anchor="middle">JS</text>
+        </g>
+      </g>
+
+      <!-- Node.js -->
+      <g transform="translate(500, 816)">
+        <g class="counter-spin-cw-fast interactive-icon" transform="scale(1, 2.22)">
+          <rect x="-20" y="-20" width="40" height="40" rx="8" fill="#0f172a" stroke="#8b5cf6" stroke-width="1.5" filter="url(#glow-purple)"/>
+          <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#8b5cf6" text-anchor="middle">Node</text>
+        </g>
+      </g>
+
+      <!-- Dart -->
+      <g transform="translate(350, 666)">
+        <g class="counter-spin-cw-fast interactive-icon" transform="scale(1, 2.22)">
+          <rect x="-20" y="-20" width="40" height="40" rx="8" fill="#0f172a" stroke="#8b5cf6" stroke-width="1.5" filter="url(#glow-purple)"/>
+          <!-- Diamond shape -->
+          <polygon points="0,-10 10,0 0,10 -10,0" fill="none" stroke="#8b5cf6" stroke-width="1.5"/>
+        </g>
+      </g>
+    </g>
+
+    
+    <!-- === CENTRAL NODE (AI Core / Reactor) === -->
+    <!-- Outer Reactor Circle -->
+    <ellipse cx="500" cy="666" rx="70" ry="70" fill="none" stroke="#8b5cf6" stroke-width="2.5" stroke-dasharray="15 8" class="spin-cw" filter="url(#glow-purple)"/>
+    <!-- Central Pulsing Core -->
+    <g class="pulse-core">
+      <circle cx="500" cy="666" r="36" fill="url(#core-glow)"/>
+      <circle cx="500" cy="666" r="18" fill="#ffffff" filter="url(#glow-purple)"/>
+      <!-- Cybernetic Inner Lines -->
+      <line x1="500" y1="640" x2="500" y2="692" stroke="#8b5cf6" stroke-width="2" />
+      <line x1="474" y1="666" x2="526" y2="666" stroke="#8b5cf6" stroke-width="2" />
+    </g>
+    
+  </g>
+</svg>
