@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 320" width="100%" height="100%">
+  <defs>
+    <!-- Intense Glow Filters -->
+    <filter id="glow-cyan" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="blur1" />
+      <feGaussianBlur stdDeviation="7" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="glow-magenta" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="blur1" />
+      <feGaussianBlur stdDeviation="7" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="glow-blue" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur1" />
+      <feGaussianBlur stdDeviation="8" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Translucent Terminal Glass Gradient -->
+    <linearGradient id="term-glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020516" stop-opacity="0.94"/>
+      <stop offset="100%" stop-color="#010206" stop-opacity="0.98"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    /* CSS keyframes */
+    @keyframes blink {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; }
+    }
+    @keyframes pulse-silicon {
+      0%, 100% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.08); opacity: 1; filter: drop-shadow(0 0 10px #ff007f); }
+    }
+    @keyframes circuit-flow {
+      0% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: -24; }
+    }
+
+    /* Animation Classes */
+    .blink { animation: blink 2s infinite ease-in-out; }
+    .pulse-core { transform-origin: 410px 165px; animation: pulse-silicon 3.5s infinite ease-in-out; }
+    .circuit-link { stroke-dasharray: 6 8; animation: circuit-flow 1.8s linear infinite; }
+
+    /* Typography styles */
+    .term-text { font-family: 'Courier New', Courier, monospace; font-size: 11px; font-weight: bold; fill: #ffffff; }
+    .term-label { fill: #00f5d4; }
+    .term-val { fill: #8fa0c5; }
+    .term-title { font-family: 'Courier New', monospace; font-size: 10px; font-weight: bold; fill: #52638c; letter-spacing: 1px; }
+  </style>
+
+  <!-- Terminal Window Chrome Frame -->
+  <rect width="550" height="320" rx="12" fill="url(#term-glass)" stroke="#0077b6" stroke-width="1.5" stroke-opacity="0.7" filter="url(#glow-blue)" />
+
+  <!-- Window Header Bar -->
+  <path d="M0,12 Q0,0 12,0 L538,0 Q550,0 550,12 L550,30 L0,30 Z" fill="#010410" />
+  <circle cx="20" cy="15" r="4.5" fill="#ef4444" />
+  <circle cx="33" cy="15" r="4.5" fill="#eab308" />
+  <circle cx="46" cy="15" r="4.5" fill="#22c55e" />
+  <text x="275" y="19" class="term-title" text-anchor="middle">nhutanhmc@xavia-deck:~ (zsh)</text>
+  <circle cx="530" cy="15" r="3" fill="#ff007f" class="blink" filter="url(#glow-magenta)" />
+  
+  <line x1="0" y1="30" x2="550" y2="30" stroke="#0077b6" stroke-width="1" stroke-opacity="0.4" />
+
+  <!-- Corner Brackets overlay -->
+  <path d="M12,42 L12,36 L18,36" fill="none" stroke="#00f5d4" stroke-width="1.5" stroke-opacity="0.8" filter="url(#glow-cyan)" />
+  <path d="M538,42 L538,36 L532,36" fill="none" stroke="#00f5d4" stroke-width="1.5" stroke-opacity="0.8" filter="url(#glow-cyan)" />
+  <path d="M12,308 L12,314 L18,314" fill="none" stroke="#00f5d4" stroke-width="1.5" stroke-opacity="0.8" filter="url(#glow-cyan)" />
+  <path d="M538,308 L538,314 L532,314" fill="none" stroke="#00f5d4" stroke-width="1.5" stroke-opacity="0.8" filter="url(#glow-cyan)" />
+
+  <!-- === LEFT HALF: SYSTEM SPECIFICATIONS === -->
+  <g transform="translate(25, 52)">
+    <text x="0" y="15" class="term-text" fill="#ff007f" filter="url(#glow-magenta)">nhutanhmc@xavia-deck</text>
+    <text x="0" y="27" class="term-text" fill="#0077b6">--------------------</text>
+    
+    <text x="0" y="45" class="term-text"><tspan class="term-label">OS: </tspan><tspan class="term-val">Arch CyberLinux x86_64</tspan></text>
+    <text x="0" y="62" class="term-text"><tspan class="term-label">Host: </tspan><tspan class="term-val">Xavia CyberDeck v3.5</tspan></text>
+    <text x="0" y="79" class="term-text"><tspan class="term-label">Kernel: </tspan><tspan class="term-val">6.9.2-cyber-core</tspan></text>
+    <text x="0" y="96" class="term-text"><tspan class="term-label">Uptime: </tspan><tspan class="term-val">24 years 🌏</tspan></text>
+    <text x="0" y="113" class="term-text"><tspan class="term-label">Shell: </tspan><tspan class="term-val">zsh 5.9</tspan></text>
+    <text x="0" y="130" class="term-text"><tspan class="term-label">DE: </tspan><tspan class="term-val">Hyprland (Neon-Cyan)</tspan></text>
+    <text x="0" y="147" class="term-text"><tspan class="term-label">CPU: </tspan><tspan class="term-val">Cognitive Core (16) @ 5.8GHz</tspan></text>
+    <text x="0" y="164" class="term-text"><tspan class="term-label">RAM: </tspan><tspan class="term-val">64 GB / LPDDR5</tspan></text>
+    <text x="0" y="181" class="term-text"><tspan class="term-label">Focus: </tspan><tspan class="term-val">AI Integration / Web / Mobile</tspan></text>
+    <text x="0" y="198" class="term-text"><tspan class="term-label">Directives: </tspan><tspan class="term-val" fill="#00f5d4" filter="url(#glow-cyan)">Clean code, peak performance ✨</tspan></text>
+  </g>
+
+  <!-- Vertical partition line -->
+  <line x1="330" y1="40" x2="330" y2="305" stroke="#0077b6" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="4 4" />
+
+  <!-- === RIGHT HALF: GLOWING CPU CHIP & CIRCUITS === -->
+  <!-- Circuit Pathways -->
+  <g fill="none" stroke="#0077b6" stroke-width="1.5" stroke-opacity="0.7">
+    <!-- Top left connector -->
+    <path d="M 350,85 L 375,110 L 375,130" />
+    <circle cx="350" cy="85" r="2.5" fill="#0077b6" />
+    
+    <!-- Top connector -->
+    <path d="M 410,75 L 410,130" />
+    <circle cx="410" cy="75" r="2.5" fill="#0077b6" />
+
+    <!-- Top right connector -->
+    <path d="M 470,85 L 445,110 L 445,130" />
+    <circle cx="470" cy="85" r="2.5" fill="#0077b6" />
+
+    <!-- Bottom left connector -->
+    <path d="M 350,245 L 375,220 L 375,200" />
+    <circle cx="350" cy="245" r="2.5" fill="#0077b6" />
+
+    <!-- Bottom connector -->
+    <path d="M 410,255 L 410,200" />
+    <circle cx="410" cy="255" r="2.5" fill="#0077b6" />
+
+    <!-- Bottom right connector -->
+    <path d="M 470,245 L 445,220 L 445,200" />
+    <circle cx="470" cy="245" r="2.5" fill="#0077b6" />
+
+    <!-- Right side connector -->
+    <path d="M 505,165 L 445,165" />
+    <circle cx="505" cy="165" r="2.5" fill="#0077b6" />
+  </g>
+
+  <!-- Glowing Flowing Circuits -->
+  <g fill="none" stroke="#ff007f" stroke-width="2" class="circuit-link" filter="url(#glow-magenta)">
+    <path d="M 350,85 L 375,110 L 375,130" />
+    <path d="M 410,75 L 410,130" />
+    <path d="M 470,85 L 445,110 L 445,130" />
+    <path d="M 350,245 L 375,220 L 375,200" />
+    <path d="M 410,255 L 410,200" />
+    <path d="M 470,245 L 445,220 L 445,200" />
+    <path d="M 505,165 L 445,165" />
+  </g>
+
+  <!-- Silicon Chip Base Frame -->
+  <rect x="375" y="130" width="70" height="70" rx="6" fill="#020512" stroke="#0077b6" stroke-width="2" filter="url(#glow-blue)" />
+
+  <!-- Processor Core Core -->
+  <g class="pulse-core">
+    <rect x="387" y="142" width="46" height="46" rx="4" fill="#040d2d" stroke="#ff007f" stroke-width="2" filter="url(#glow-magenta)" />
+    <!-- Glowing core data dots -->
+    <circle cx="410" cy="165" r="12" fill="none" stroke="#00f5d4" stroke-width="1.5" stroke-dasharray="4 4" class="blink" />
+    <circle cx="410" cy="165" r="5" fill="#ffffff" filter="url(#glow-cyan)" />
+  </g>
+
+  <!-- Diagnostic telemetry metrics -->
+  <text x="410" y="218" font-family="monospace" font-size="8.5" fill="#ff007f" font-weight="bold" text-anchor="middle" filter="url(#glow-magenta)">COGNITIVE: MAX</text>
+  <text x="410" y="278" font-family="monospace" font-size="8.5" fill="#00f5d4" font-weight="bold" text-anchor="middle" class="blink" filter="url(#glow-cyan)">SECURITY: ON</text>
+</svg>

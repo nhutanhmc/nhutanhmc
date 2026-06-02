@@ -1,0 +1,364 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="100%" height="100%">
+  <defs>
+    <!-- Cyan, Blue, and Magenta Glow Filters -->
+    <filter id="glow-cyan" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4.5" result="blur1" />
+      <feGaussianBlur stdDeviation="9" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="glow-magenta" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4.5" result="blur1" />
+      <feGaussianBlur stdDeviation="9" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="glow-blue" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur1" />
+      <feGaussianBlur stdDeviation="10" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Translucent Dark Glass Gradient -->
+    <linearGradient id="card-glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020512" stop-opacity="0.94"/>
+      <stop offset="50%" stop-color="#010206" stop-opacity="0.97"/>
+      <stop offset="100%" stop-color="#040b26" stop-opacity="0.94"/>
+    </linearGradient>
+
+    <!-- Clip Path for scrolling logs -->
+    <clipPath id="logs-clip-v2">
+      <rect x="0" y="0" width="340" height="225" />
+    </clipPath>
+  </defs>
+
+  <style>
+    /* CSS keyframes for various custom elements */
+    @keyframes blink {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; }
+    }
+    @keyframes cursor-blink {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+    @keyframes spin-cw {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes spin-ccw {
+      0% { transform: rotate(360deg); }
+      100% { transform: rotate(0deg); }
+    }
+    @keyframes laser-sweep {
+      0% { transform: translateY(0px); opacity: 0; }
+      10% { opacity: 0.7; }
+      90% { opacity: 0.7; }
+      100% { transform: translateY(280px); opacity: 0; }
+    }
+    @keyframes log-scroll {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-205px); }
+    }
+    @keyframes pulse-core {
+      0%, 100% { transform: scale(1); opacity: 0.85; }
+      50% { transform: scale(1.18); opacity: 1; filter: drop-shadow(0 0 15px #ff007f); }
+    }
+    @keyframes spin3d {
+      0% { transform: rotateX(25deg) rotateY(0deg); }
+      100% { transform: rotateX(25deg) rotateY(360deg); }
+    }
+
+    /* Warp Drive Star Particles flying outwards from center (600, 240) */
+    @keyframes warp-star-1 {
+      0% { transform: translate(0, 0) scale(0.1); opacity: 0; }
+      10% { opacity: 0.8; }
+      100% { transform: translate(-380px, -220px) scale(2); opacity: 0; }
+    }
+    @keyframes warp-star-2 {
+      0% { transform: translate(0, 0) scale(0.1); opacity: 0; }
+      10% { opacity: 0.8; }
+      100% { transform: translate(380px, -200px) scale(2); opacity: 0; }
+    }
+    @keyframes warp-star-3 {
+      0% { transform: translate(0, 0) scale(0.1); opacity: 0; }
+      10% { opacity: 0.8; }
+      100% { transform: translate(-350px, 220px) scale(2); opacity: 0; }
+    }
+    @keyframes warp-star-4 {
+      0% { transform: translate(0, 0) scale(0.1); opacity: 0; }
+      10% { opacity: 0.8; }
+      100% { transform: translate(360px, 230px) scale(2); opacity: 0; }
+    }
+    @keyframes warp-star-5 {
+      0% { transform: translate(0, 0) scale(0.1); opacity: 0; }
+      10% { opacity: 0.8; }
+      100% { transform: translate(0px, -240px) scale(2.2); opacity: 0; }
+    }
+    @keyframes warp-star-6 {
+      0% { transform: translate(0, 0) scale(0.1); opacity: 0; }
+      10% { opacity: 0.8; }
+      100% { transform: translate(0px, 240px) scale(2.2); opacity: 0; }
+    }
+
+    /* Resource Load bars keyframes */
+    @keyframes workload-1 { 0%, 100% { height: 20px; y: 225px; } 50% { height: 80px; y: 165px; } }
+    @keyframes workload-2 { 0%, 100% { height: 60px; y: 185px; } 50% { height: 30px; y: 215px; } }
+    @keyframes workload-3 { 0%, 100% { height: 40px; y: 205px; } 50% { height: 95px; y: 150px; } }
+    @keyframes workload-4 { 0%, 100% { height: 75px; y: 170px; } 50% { height: 45px; y: 200px; } }
+
+    /* Applied classes */
+    .blink { animation: blink 2s infinite ease-in-out; }
+    .cursor { animation: cursor-blink 1s infinite; fill: #00f5d4; }
+    .rotate-cw { transform-origin: 600px 240px; animation: spin-cw 20s linear infinite; }
+    .rotate-ccw { transform-origin: 600px 240px; animation: spin-ccw 14s linear infinite; }
+    .laser-sweep { animation: laser-sweep 4.2s infinite linear; stroke: #00f5d4; filter: url(#glow-cyan); }
+    .log-scroller { animation: log-scroll 12s linear infinite; }
+    .pulse-core { animation: pulse-core 3s ease-in-out infinite; transform-origin: 600px 240px; }
+    
+    .radar-line { transform-origin: 865px 210px; animation: spin-cw 3.8s linear infinite; }
+    
+    .globe3d { transform-style: preserve-3d; transform-origin: 600px 240px; animation: spin3d 8s linear infinite; }
+
+    /* Star fly particles */
+    .star-p { fill: #00f5d4; filter: url(#glow-cyan); }
+    .star-m { fill: #ff007f; filter: url(#glow-magenta); }
+    .wp-1 { transform-origin: 600px 240px; animation: warp-star-1 4s infinite linear; }
+    .wp-2 { transform-origin: 600px 240px; animation: warp-star-2 3s infinite linear; }
+    .wp-3 { transform-origin: 600px 240px; animation: warp-star-3 5s infinite linear; }
+    .wp-4 { transform-origin: 600px 240px; animation: warp-star-4 3.5s infinite linear; }
+    .wp-5 { transform-origin: 600px 240px; animation: warp-star-5 4.5s infinite linear; }
+    .wp-6 { transform-origin: 600px 240px; animation: warp-star-6 3.2s infinite linear; }
+
+    /* Workload bars */
+    .wl-1 { animation: workload-1 1.4s infinite ease-in-out; }
+    .wl-2 { animation: workload-2 0.9s infinite ease-in-out; }
+    .wl-3 { animation: workload-3 1.7s infinite ease-in-out; }
+    .wl-4 { animation: workload-4 1.1s infinite ease-in-out; }
+
+    /* Typography */
+    .line-text { font-family: 'Courier New', Courier, monospace; font-size: 11px; fill: #8da4d0; }
+    .diag-label { font-family: 'Courier New', monospace; font-size: 10px; font-weight: bold; fill: #00f5d4; }
+    .panel-hdr-text { font-family: 'Courier New', monospace; font-size: 11px; font-weight: bold; fill: #52638c; letter-spacing: 1.5px; }
+  </style>
+
+  <!-- Solid Canvas Background -->
+  <rect width="1200" height="500" rx="16" fill="#010204" stroke="#0e172a" stroke-width="2.5" />
+
+  <!-- === 3D HYPERSPACE WARP TUNNEL BACKGROUND === -->
+  <!-- Wireframe Tunnel Portals -->
+  <g stroke="#0077b6" stroke-opacity="0.12" stroke-width="1.5" fill="none">
+    <rect x="550" y="200" width="100" height="80" />
+    <rect x="480" y="150" width="240" height="180" />
+    <rect x="360" y="70" width="480" height="340" />
+    <rect x="200" y="-20" width="800" height="520" />
+    <!-- Diagonal Orthogonal Lines extending from warp node center (600, 240) -->
+    <line x1="600" y1="240" x2="-200" y2="-100" />
+    <line x1="600" y1="240" x2="1400" y2="-100" />
+    <line x1="600" y1="240" x2="-200" y2="600" />
+    <line x1="600" y1="240" x2="1400" y2="600" />
+  </g>
+
+  <!-- Flying Star Particles -->
+  <circle cx="600" cy="240" r="1.5" class="star-p wp-1" />
+  <circle cx="600" cy="240" r="2" class="star-m wp-2" />
+  <circle cx="600" cy="240" r="1" class="star-p wp-3" />
+  <circle cx="600" cy="240" r="2.5" class="star-m wp-4" />
+  <circle cx="600" cy="240" r="1.5" class="star-p wp-5" />
+  <circle cx="600" cy="240" r="2" class="star-m wp-6" />
+
+  <!-- === HUD INTERFACE CIRCUITS === -->
+  <!-- Cyan & Magenta vector circuits along headers -->
+  <g stroke-linecap="round" fill="none" stroke-opacity="0.65">
+    <path d="M 30,25 L 410,25 L 430,45" stroke="#00f5d4" stroke-width="1.5" filter="url(#glow-cyan)" />
+    <path d="M 1170,25 L 790,25 L 770,45" stroke="#ff007f" stroke-width="1.5" filter="url(#glow-magenta)" />
+    <!-- Circuit nodes -->
+    <circle cx="30" cy="25" r="2.5" fill="#00f5d4" />
+    <circle cx="1170" cy="25" r="2.5" fill="#ff007f" />
+  </g>
+
+  <!-- === LEFT COMPARTMENT (XAVIA SYSTEM CONSOLE) === -->
+  <g id="left-card">
+    <!-- Card Frame and Blured Background -->
+    <rect x="30" y="40" width="380" height="320" rx="10" fill="url(#card-glass)" stroke="#0077b6" stroke-width="1.5" stroke-opacity="0.7" filter="url(#glow-blue)" />
+    
+    <!-- Chrome OS Control Buttons -->
+    <circle cx="55" cy="58" r="5" fill="#ef4444" />
+    <circle cx="70" cy="58" r="5" fill="#eab308" />
+    <circle cx="85" cy="58" r="5" fill="#22c55e" />
+    <text x="220" y="62" class="panel-hdr-text" text-anchor="middle">XAVIA_CORE_SHELL.sys</text>
+    <circle cx="385" cy="58" r="3.5" fill="#00f5d4" class="blink" />
+    
+    <line x1="30" y1="72" x2="410" y2="72" stroke="#0077b6" stroke-width="1" stroke-opacity="0.4" />
+
+    <!-- Scanner Laser Beam -->
+    <line x1="31" y1="73" x2="409" y2="73" stroke-width="2" class="laser-sweep" />
+
+    <!-- UI brackets -->
+    <path d="M38,84 L38,78 L46,78" fill="none" stroke="#00f5d4" stroke-width="1.5" filter="url(#glow-cyan)" />
+    <path d="M402,84 L402,78 L394,78" fill="none" stroke="#00f5d4" stroke-width="1.5" filter="url(#glow-cyan)" />
+    <path d="M38,306 L38,312 L46,312" fill="none" stroke="#00f5d4" stroke-width="1.5" filter="url(#glow-cyan)" />
+    <path d="M402,306 L402,312 L394,312" fill="none" stroke="#00f5d4" stroke-width="1.5" filter="url(#glow-cyan)" />
+
+    <!-- Terminal Output Streams -->
+    <g transform="translate(50, 92)">
+      <g clip-path="url(#logs-clip-v2)">
+        <g class="log-scroller">
+          <text x="0" y="12" class="line-text" fill="#ff007f" filter="url(#glow-magenta)">[SYSTEM] WAKING UP CORE NEURAL NET...</text>
+          <text x="0" y="27" class="line-text">[SYSTEM] INTEL CORE STATUS: <tspan fill="#22c55e">ONLINE</tspan></text>
+          <text x="0" y="42" class="line-text">[DEPLOY] BINDING PORT 8080 : API ROUTING</text>
+          <text x="0" y="57" class="line-text">[DEPLOY] NEXT.js DEPLOYMENT COMPILED</text>
+          <text x="0" y="72" class="line-text">[DEPLOY] DART &amp; FLUTTER ENVIRONMENT INJECTED</text>
+          <text x="0" y="87" class="line-text">[SYSTEM] SECURE AES-256 TUNNEL ESTABLISHED</text>
+          <text x="0" y="102" class="line-text">[RECORD] WAKATIME CODING HOURS LOADED</text>
+          <text x="0" y="117" class="line-text" fill="#00f5d4">[DIAG] THERMAL RATIO: 37.8 C [STABLE]</text>
+          <text x="0" y="132" class="line-text" fill="#00b4d8">[AUDIO] STREAMING Lofi_Synthwave.flac</text>
+          <text x="0" y="147" class="line-text" fill="#eab308">[ALERT] COGNITIVE COEFFICIENT PEAK: 99.9%</text>
+          <text x="0" y="162" class="line-text">[SYSTEM] DEEP MIND COGNITION ENGINE ACTIVE</text>
+          <text x="0" y="177" class="line-text" fill="#ff007f" filter="url(#glow-magenta)">[SYSTEM] ALL MODULES OPERATIONAL [100%]</text>
+
+          <!-- Loop Jump Segment -->
+          <text x="0" y="217" class="line-text" fill="#ff007f" filter="url(#glow-magenta)">[SYSTEM] WAKING UP CORE NEURAL NET...</text>
+          <text x="0" y="232" class="line-text">[SYSTEM] INTEL CORE STATUS: <tspan fill="#22c55e">ONLINE</tspan></text>
+          <text x="0" y="247" class="line-text">[DEPLOY] BINDING PORT 8080 : API ROUTING</text>
+          <text x="0" y="262" class="line-text">[DEPLOY] NEXT.js DEPLOYMENT COMPILED</text>
+        </g>
+      </g>
+      <text x="0" y="245" class="line-text" fill="#00f5d4">$ <tspan fill="#ffffff">await xavia.launchV2()</tspan><rect x="180" y="234" width="6" height="12" class="cursor" /></text>
+    </g>
+
+    <!-- Stat readouts inside panel -->
+    <line x1="30" y1="322" x2="410" y2="322" stroke="#0077b6" stroke-width="1" stroke-opacity="0.3" />
+    <text x="50" y="342" font-family="monospace" font-size="9.5" fill="#00b4d8" font-weight="bold">HOST: nhutanhmc-deck</text>
+    <text x="390" y="342" font-family="monospace" font-size="9.5" fill="#ff007f" font-weight="bold" text-anchor="end" filter="url(#glow-magenta)">STATUS: STABLE</text>
+  </g>
+
+  <!-- === CENTER PANEL (3D QUANTUM REACTOR CORE) === -->
+  <g id="center-reactor">
+    <!-- Rotating 3D Hologram Spherical Grid -->
+    <g class="globe3d">
+      <!-- Orbits (Cyan) -->
+      <ellipse cx="600" cy="240" rx="90" ry="25" fill="none" stroke="#00f5d4" stroke-width="1.8" stroke-opacity="0.9" filter="url(#glow-cyan)" />
+      <ellipse cx="600" cy="240" rx="90" ry="25" fill="none" stroke="#ff007f" stroke-width="1.2" stroke-opacity="0.6" filter="url(#glow-magenta)" transform="rotate(30, 600, 240)" />
+      <ellipse cx="600" cy="240" rx="90" ry="25" fill="none" stroke="#0077b6" stroke-width="1" stroke-opacity="0.5" transform="rotate(-30, 600, 240)" />
+
+      <!-- Vertical Spherical slices (Magenta) -->
+      <ellipse cx="600" cy="240" rx="25" ry="90" fill="none" stroke="#ff007f" stroke-width="1.8" stroke-opacity="0.9" filter="url(#glow-magenta)" />
+      <ellipse cx="600" cy="240" rx="25" ry="90" fill="none" stroke="#00f5d4" stroke-width="1.2" stroke-opacity="0.6" filter="url(#glow-cyan)" transform="rotate(30, 600, 240)" />
+      <ellipse cx="600" cy="240" rx="25" ry="90" fill="none" stroke="#0077b6" stroke-width="1" stroke-opacity="0.5" transform="rotate(-30, 600, 240)" />
+
+      <!-- Outer 3D Circular shell -->
+      <ellipse cx="600" cy="240" rx="90" ry="90" fill="none" stroke="#00f5d4" stroke-width="1.2" stroke-opacity="0.7" transform="rotate(45, 600, 240)" />
+    </g>
+
+    <!-- Outer Flat Telemetry Dashboard Gears -->
+    <circle cx="600" cy="240" r="105" fill="none" stroke="#00b4d8" stroke-dasharray="20 10" stroke-width="2.5" class="rotate-cw" filter="url(#glow-blue)" />
+    <circle cx="600" cy="240" r="118" fill="none" stroke="#ff007f" stroke-dasharray="8 16" stroke-width="2" class="rotate-ccw" filter="url(#glow-magenta)" />
+
+    <!-- Crosshair ticks -->
+    <g stroke="#0077b6" stroke-opacity="0.4" stroke-width="2">
+      <line x1="600" y1="110" x2="600" y2="128" />
+      <line x1="600" y1="352" x2="600" y2="370" />
+      <line x1="470" y1="240" x2="488" y2="240" />
+      <line x1="712" y1="240" x2="730" y2="240" />
+    </g>
+
+    <!-- Pulsing Silicon Heart Core -->
+    <circle cx="600" cy="240" r="16" fill="#020512" stroke="#ff007f" stroke-width="3" filter="url(#glow-magenta)" />
+    <circle cx="600" cy="240" r="8" fill="#ffffff" class="blink" filter="url(#glow-cyan)" />
+
+    <!-- Central Reactor text data reading -->
+    <text x="600" y="390" font-family="monospace" font-size="11" font-weight="bold" fill="#ff007f" text-anchor="middle" filter="url(#glow-magenta)">FUSION_REACTOR_V2: PEAK (5.8GW)</text>
+  </g>
+
+  <!-- === RIGHT COMPARTMENT (TACTICAL HUD DIAGNOSTIC GRAPH) === -->
+  <g id="right-card">
+    <!-- Card Frame and Blured Background -->
+    <rect x="790" y="40" width="380" height="320" rx="10" fill="url(#card-glass)" stroke="#0077b6" stroke-width="1.5" stroke-opacity="0.7" filter="url(#glow-blue)" />
+    
+    <!-- Header -->
+    <path d="M790,52 Q790,40 802,40 L1158,40 Q1170,40 1170,52 L1170,72 L790,72 Z" fill="#010410" />
+    <text x="980" y="58" class="panel-hdr-text" text-anchor="middle">TACTICAL_MONITOR_V2.cfg</text>
+    
+    <line x1="790" y1="72" x2="1170" y2="72" stroke="#0077b6" stroke-width="1" stroke-opacity="0.4" />
+
+    <!-- Corner Brackets -->
+    <path d="M798,84 L798,78 L806,78" fill="none" stroke="#ff007f" stroke-width="1.5" filter="url(#glow-magenta)" />
+    <path d="M1162,84 L1162,78 L1154,78" fill="none" stroke="#ff007f" stroke-width="1.5" filter="url(#glow-magenta)" />
+    <path d="M798,306 L798,312 L806,312" fill="none" stroke="#ff007f" stroke-width="1.5" filter="url(#glow-magenta)" />
+    <path d="M1162,306 L1162,312 L1154,312" fill="none" stroke="#ff007f" stroke-width="1.5" filter="url(#glow-magenta)" />
+
+    <!-- Radar Sweep Grid (Left Inside Card) -->
+    <g transform="translate(25, 10)">
+      <circle cx="865" cy="180" r="60" fill="#010412" stroke="#0077b6" stroke-width="1" stroke-opacity="0.4" />
+      <circle cx="865" cy="180" r="40" fill="none" stroke="#0077b6" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="4 4" />
+      <circle cx="865" cy="180" r="20" fill="none" stroke="#0077b6" stroke-width="1" stroke-opacity="0.3" />
+      <line x1="800" y1="180" x2="930" y2="180" stroke="#0077b6" stroke-width="1" stroke-opacity="0.3" />
+      <line x1="865" y1="115" x2="865" y2="245" stroke="#0077b6" stroke-width="1" stroke-opacity="0.3" />
+      
+      <!-- Sweep scanning ray -->
+      <line x1="865" y1="180" x2="865" y2="120" stroke="#00f5d4" stroke-width="2.5" class="radar-line" filter="url(#glow-cyan)" />
+      
+      <!-- Target locks (Blinking Magenta points) -->
+      <circle cx="845" cy="155" r="4.5" fill="#ff007f" class="blink" filter="url(#glow-magenta)" />
+      <circle cx="895" cy="205" r="3.5" fill="#ff007f" class="blink" filter="url(#glow-magenta)" />
+
+      <text x="865" y="260" font-family="monospace" font-size="9" fill="#00f5d4" text-anchor="middle" font-weight="bold">SYS_LOCK: SECURED</text>
+    </g>
+
+    <!-- Live Performance Diagnostic Chart (Right Inside Card) -->
+    <g transform="translate(970, 92)">
+      <rect x="0" y="0" width="175" height="60" fill="#010412" stroke="#0077b6" stroke-width="1" stroke-opacity="0.3" />
+      <line x1="0" y1="30" x2="175" y2="30" stroke="#0077b6" stroke-width="1" stroke-opacity="0.1" stroke-dasharray="3 3" />
+      
+      <!-- Spline Chart Wave paths -->
+      <path d="M 0,50 Q 20,10 40,40 T 80,20 T 120,55 T 160,10 T 175,32" fill="none" stroke="#00f5d4" stroke-width="2.5" filter="url(#glow-cyan)" />
+      <path d="M 0,30 Q 30,55 60,15 T 120,45 T 175,20" fill="none" stroke="#ff007f" stroke-width="1.8" stroke-opacity="0.8" filter="url(#glow-magenta)" />
+      
+      <text x="5" y="12" font-family="monospace" font-size="8.5" fill="#8da4d0" font-weight="bold">CLOCK: 5.8 GHz [100%]</text>
+    </g>
+
+    <!-- Workload Multi-Bar Equalizer -->
+    <g transform="translate(970, 168)">
+      <text x="0" y="0" font-family="monospace" font-size="9.5" fill="#0077b6" font-weight="bold">COGNITIVE LOAD BYTES</text>
+      
+      <!-- Bouncing Bars -->
+      <g fill="#ff007f" stroke="none" filter="url(#glow-magenta)">
+        <rect x="0" y="200" width="15" height="30" class="wl-1" rx="2" />
+        <rect x="22" y="210" width="15" height="20" class="wl-2" rx="2" fill="#00f5d4" filter="url(#glow-cyan)" />
+        <rect x="44" y="195" width="15" height="35" class="wl-3" rx="2" />
+        <rect x="66" y="205" width="15" height="25" class="wl-4" rx="2" fill="#00f5d4" filter="url(#glow-cyan)" />
+      </g>
+
+      <!-- Numerical Stats Panel -->
+      <g transform="translate(90, 15)" font-family="monospace" font-size="9.5" fill="#8da4d0">
+        <text x="0" y="5">MEM_USED: <tspan fill="#ff007f" font-weight="bold">60.4 GB</tspan></text>
+        <text x="0" y="22">CORE_TEMP: <tspan fill="#00f5d4">38.6 C</tspan></text>
+        <text x="0" y="39">NET_LATENCY: <tspan fill="#ff007f">12ms</tspan></text>
+        <text x="0" y="56" fill="#22c55e" font-weight="bold">SYSTEM STATUS: MAX</text>
+      </g>
+    </g>
+
+    <!-- Footer telemetry readouts -->
+    <line x1="790" y1="322" x2="1170" y2="322" stroke="#0077b6" stroke-width="1" stroke-opacity="0.3" />
+    <text x="810" y="342" font-family="monospace" font-size="9.5" fill="#0077b6" font-weight="bold">LINK_NODE: CONNECTED</text>
+    <text x="1150" y="342" font-family="monospace" font-size="9.5" fill="#ff007f" font-weight="bold" text-anchor="end" filter="url(#glow-magenta)">DECK: ACTIVE</text>
+  </g>
+
+  <!-- === FOOTER DECORATIONS === -->
+  <!-- Wireframe telemetry brackets on bottom horizon -->
+  <path d="M 450,450 L 500,450 L 510,470" fill="none" stroke="#00f5d4" stroke-width="1" stroke-opacity="0.5" />
+  <path d="M 750,450 L 700,450 L 690,470" fill="none" stroke="#ff007f" stroke-width="1" stroke-opacity="0.5" />
+  
+  <text x="600" y="475" font-family="monospace" font-size="10" fill="#0077b6" font-weight="bold" text-anchor="middle" letter-spacing="2">NEURAL_DECK_INTERFACE_v2.0 // ESTABLISHED</text>
+</svg>

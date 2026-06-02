@@ -1,6 +1,6 @@
 <div align="center">
-  <!-- Custom Coded Cockpit Dashboard SVG (Blue Theme with Cache-Bust) -->
-  <img src="image/cyberpunk_header.svg?v=20" alt="Xavia Cyber Dashboard" width="100%" style="border-radius: 16px; box-shadow: 0px 8px 32px rgba(0, 180, 216, 0.25); border: 1px solid #00b4d8;" />
+  <!-- Custom Coded Cockpit Dashboard SVG (v2 - Cyan & Magenta Theme) -->
+  <img src="image/cyberdeck_hud_v2.svg" alt="Xavia Cyber Dashboard" width="100%" style="border-radius: 16px; box-shadow: 0px 8px 32px rgba(0, 180, 216, 0.25); border: 1px solid #00b4d8;" />
   
   <br/><br/>
   
@@ -51,8 +51,8 @@ const developer = {
     </td>
     <td width="45%" valign="top" align="center">
       <br/><br/>
-      <!-- Interactive Developer Terminal -->
-      <img src="image/profile_terminal.svg?v=20" width="100%" style="border-radius: 10px; box-shadow: 0px 8px 32px rgba(0, 180, 216, 0.25); border: 1px solid #00b4d8;" alt="Cybernetic Terminal" />
+      <!-- Interactive Developer Terminal (v2 - Spec Panel) -->
+      <img src="image/system_terminal_v2.svg" width="100%" style="border-radius: 10px; box-shadow: 0px 8px 32px rgba(0, 180, 216, 0.25); border: 1px solid #00b4d8;" alt="Cybernetic Terminal" />
     </td>
   </tr>
 </table>
@@ -61,8 +61,8 @@ const developer = {
 
 <h2 align="center">🌌 HOLOGRAPHIC TECH ORBIT</h2>
 <div align="center">
-  <!-- Interactive animated 3D Tech Orbit SVG (Blue Theme with Cache-Bust) -->
-  <img src="image/tech_orbit.svg?v=20" width="85%" alt="Tech Orbit" style="border-radius: 12px;" />
+  <!-- Interactive animated 3D Tech Constellation SVG (v2 - Constellation Blueprint) -->
+  <img src="image/tech_constellation_v2.svg" width="85%" alt="Tech Constellation Map" style="border-radius: 12px;" />
 </div>
 
 ---
@@ -341,8 +341,8 @@ const developer = {
 
 <h2 align="center">🎵 AUDIO PROTOCOL (SOUNDTRACK)</h2>
 <div align="center">
-  <!-- Interactive animated Cyberpunk Music Player SVG (Blue Theme with Cache-Bust) -->
-  <img src="image/music_player.svg?v=20" width="65%" alt="Audio Terminal" style="border-radius: 15px;" />
+  <!-- Interactive animated Cyberpunk Audio Deck SVG (v2 - Equalizer Console) -->
+  <img src="image/audio_deck_v2.svg" width="65%" alt="Audio Terminal" style="border-radius: 15px;" />
 </div>
 
 ---
