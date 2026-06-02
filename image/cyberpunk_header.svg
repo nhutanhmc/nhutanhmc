@@ -22,24 +22,29 @@
 
     <!-- Linear Gradients for Cards -->
     <linearGradient id="card-gradient-left" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#070d1e" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#020617" stop-opacity="0.95"/>
+      <stop offset="0%" stop-color="#050814" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#010206" stop-opacity="0.98"/>
     </linearGradient>
     <linearGradient id="card-gradient-right" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#09122c" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#020617" stop-opacity="0.95"/>
+      <stop offset="0%" stop-color="#060919" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#010206" stop-opacity="0.98"/>
     </linearGradient>
 
     <!-- Clip Path for the scrolling 3D grid floor -->
     <clipPath id="grid-clip">
       <polygon points="0,200 1000,200 1000,320 0,320" />
     </clipPath>
+    
+    <!-- Clip Path for Scrolling Logs -->
+    <clipPath id="logs-clip">
+      <rect x="0" y="0" width="530" height="180" />
+    </clipPath>
   </defs>
 
   <style>
     /* CSS Animations */
     @keyframes blink {
-      0%, 100% { opacity: 0.3; }
+      0%, 100% { opacity: 0.2; }
       50% { opacity: 1; filter: drop-shadow(0 0 8px #00f5d4); }
     }
     @keyframes cursor-blink {
@@ -47,61 +52,73 @@
       50% { opacity: 1; }
     }
     @keyframes float-particle {
-      0%, 100% { transform: translateY(0px) translateX(0px); opacity: 0.2; }
-      50% { transform: translateY(-15px) translateX(5px); opacity: 0.7; }
+      0%, 100% { transform: translateY(0px) translateX(0px); opacity: 0.1; }
+      50% { transform: translateY(-20px) translateX(8px); opacity: 0.6; }
+    }
+    @keyframes rotate-cw {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes rotate-ccw {
+      0% { transform: rotate(360deg); }
+      100% { transform: rotate(0deg); }
+    }
+    @keyframes laser-sweep {
+      0% { transform: translateY(0px); opacity: 0; }
+      10% { opacity: 0.6; }
+      90% { opacity: 0.6; }
+      100% { transform: translateY(200px); opacity: 0; }
     }
     
-    /* 3D Spinning Hologram Globe Animation */
-    @keyframes spin3d {
-      0% { transform: rotateX(20deg) rotateY(0deg) rotateZ(0deg); }
-      100% { transform: rotateX(20deg) rotateY(360deg) rotateZ(360deg); }
+    /* Live Compile Logs Scroll Animation */
+    @keyframes log-scroll {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-150px); }
     }
 
-    /* Scene Setup for 3D perspective */
-    .hologram-container {
-      transform-style: preserve-3d;
-      perspective: 500px;
-    }
-    
-    .hologram-globe {
-      transform-style: preserve-3d;
-      transform-origin: 815px 170px;
-      animation: spin3d 18s linear infinite;
-    }
-
-    /* General Animations & Styles */
-    .blink { animation: blink 2s infinite ease-in-out; }
+    /* Animation Classes */
+    .blink { animation: blink 1.5s infinite ease-in-out; }
     .cursor { animation: cursor-blink 1s infinite; fill: #00f5d4; }
+    .rotate-cw { transform-origin: 815px 170px; animation: rotate-cw 20s linear infinite; }
+    .rotate-ccw { transform-origin: 815px 170px; animation: rotate-ccw 12s linear infinite; }
+    .laser-sweep { animation: laser-sweep 4s infinite linear; stroke: #00f5d4; filter: url(#glow-cyan); }
+    .log-scroller { animation: log-scroll 8s linear infinite; }
     
     /* Particles */
     .particle {
       fill: #00f5d4;
       filter: url(#glow-cyan);
-      animation: float-particle 5s infinite ease-in-out;
+      animation: float-particle 6s infinite ease-in-out;
     }
     .p-1 { animation-delay: 0s; }
-    .p-2 { animation-delay: 1.5s; animation-duration: 6s; }
-    .p-3 { animation-delay: 3s; animation-duration: 4s; }
-    .p-4 { animation-delay: 0.5s; animation-duration: 7s; }
-    
+    .p-2 { animation-delay: 2s; }
+    .p-3 { animation-delay: 4s; }
+
+    /* Typography */
     .log-line {
       font-family: 'Courier New', Courier, monospace;
-      font-size: 13px;
+      font-size: 12px;
       font-weight: bold;
-      fill: #e2e8f0;
+      fill: #a5b4fc;
+    }
+    .status-tag {
+      font-family: 'Courier New', monospace;
+      font-size: 10px;
+      font-weight: bold;
+      fill: #64748b;
     }
   </style>
 
-  <!-- Background Base -->
-  <rect width="1000" height="320" rx="16" fill="#02040a" stroke="#111827" stroke-width="1.5" />
+  <!-- Deep Space Dark Background Base -->
+  <rect width="1000" height="320" rx="16" fill="#010204" stroke="#0f172a" stroke-width="2" />
 
   <!-- === 3D INFINITE SCROLLING GRID FLOOR === -->
   <g clip-path="url(#grid-clip)">
-    <!-- Flat Grid Darkening Overlay -->
-    <rect y="200" width="1000" height="120" fill="#030712" />
+    <!-- Flat Grid Base Overlay -->
+    <rect y="200" width="1000" height="120" fill="#02040a" />
     
-    <!-- Perspective Grid projection -->
-    <g stroke="#0077b6" stroke-opacity="0.25" stroke-width="1.5">
+    <!-- Perspective Grid lines -->
+    <g stroke="#0056b3" stroke-opacity="0.3" stroke-width="1.5">
       <line x1="-300" y1="320" x2="500" y2="200" />
       <line x1="-100" y1="320" x2="500" y2="200" />
       <line x1="100" y1="320" x2="500" y2="200" />
@@ -112,146 +129,159 @@
       <line x1="1100" y1="320" x2="500" y2="200" />
       <line x1="1300" y1="320" x2="500" y2="200" />
       
-      <!-- Scrolling horizontal perspective divisions -->
+      <!-- Horizontal perspective dividers -->
       <path d="M-400,205 L1400,205 M-400,215 L1400,215 M-400,230 L1400,230 M-400,250 L1400,250 M-400,275 L1400,275 M-400,310 L1400,310" stroke-width="1" />
     </g>
     <!-- Cyan neon horizon glow -->
-    <line x1="0" y1="200" x2="1000" y2="200" stroke="#00f5d4" stroke-width="2" stroke-opacity="0.6" filter="url(#glow-cyan)" />
+    <line x1="0" y1="200" x2="1000" y2="200" stroke="#00f5d4" stroke-width="2" stroke-opacity="0.8" filter="url(#glow-cyan)" />
   </g>
 
-  <!-- Faint HUD ring lines in background -->
-  <circle cx="500" cy="-100" r="450" fill="none" stroke="#0077b6" stroke-opacity="0.08" stroke-width="2"/>
-  <circle cx="500" cy="-100" r="550" fill="none" stroke="#0077b6" stroke-opacity="0.04" stroke-width="1.5" stroke-dasharray="15 5"/>
+  <!-- Glowing stars/particles in deep background -->
+  <circle cx="120" cy="70" r="1.5" class="particle p-1" />
+  <circle cx="480" cy="180" r="1" class="particle p-2" />
+  <circle cx="880" cy="70" r="2" class="particle p-3" />
 
-  <!-- Glowing HUD stars/particles -->
-  <circle cx="150" cy="80" r="2" class="particle p-1" />
-  <circle cx="350" cy="180" r="1.5" class="particle p-2" />
-  <circle cx="680" cy="90" r="2.5" class="particle p-3" />
-  <circle cx="890" cy="220" r="1.5" class="particle p-4" />
-
-  <!-- === LEFT TERMINAL CARD === -->
+  <!-- === LEFT TERMINAL CARD (IDE / HACKER LOGS) === -->
   <g id="left-panel">
-    <!-- Card outline glow -->
+    <!-- Card Glass Base -->
     <rect x="30" y="30" width="600" height="260" rx="12" fill="url(#card-gradient-left)" stroke="#0077b6" stroke-width="1.5" stroke-opacity="0.6" filter="url(#glow-blue)" />
-    <rect x="30" y="30" width="600" height="260" rx="12" fill="none" stroke="#00f5d4" stroke-width="1" stroke-opacity="0.3" />
     
-    <!-- Top header layout -->
-    <path d="M30,42 Q30,30 42,30 L618,30 Q630,30 630,42 L630,60 L30,60 Z" fill="#060b18" opacity="0.8" />
-    <circle cx="50" cy="45" r="5" fill="#f87171" />
-    <circle cx="68" cy="45" r="5" fill="#fbbf24" />
-    <circle cx="86" cy="45" r="5" fill="#34d399" />
-    <text x="330" y="50" font-family="monospace" font-size="11" fill="#475569" text-anchor="middle" letter-spacing="1">XAVIA_CORE_TERMINAL.sh</text>
-    
+    <!-- Top Header Bar -->
+    <path d="M30,42 Q30,30 42,30 L618,30 Q630,30 630,42 L630,60 L30,60 Z" fill="#030712" />
+    <!-- OS Control Dots -->
+    <circle cx="50" cy="45" r="5" fill="#ef4444" />
+    <circle cx="68" cy="45" r="5" fill="#f59e0b" />
+    <circle cx="86" cy="45" r="5" fill="#10b981" />
+    <!-- Title -->
+    <text x="330" y="49" font-family="monospace" font-size="11" fill="#475569" text-anchor="middle" letter-spacing="2">XAVIA_TACTICAL_TERMINAL.sh</text>
+    <!-- Active status indicator -->
     <circle cx="595" cy="45" r="4" fill="#00f5d4" class="blink" />
     <text x="582" y="48" font-family="monospace" font-size="9" fill="#00f5d4" text-anchor="end">SYS_ACTIVE</text>
 
-    <!-- Terminal Inner Text -->
-    <g transform="translate(55, 90)">
-      <!-- Line numbers -->
-      <g font-family="monospace" font-size="12" fill="#1e293b" text-anchor="end">
-        <text x="-10" y="15">01</text>
-        <text x="-10" y="40">02</text>
-        <text x="-10" y="65">03</text>
-        <text x="-10" y="90">04</text>
-        <text x="-10" y="115">05</text>
-        <text x="-10" y="140">06</text>
-        <text x="-10" y="165">07</text>
+    <!-- Tactical Target Bracket Overlay -->
+    <!-- Top Left -->
+    <path d="M40,75 L40,65 L50,65" fill="none" stroke="#00f5d4" stroke-width="2" stroke-opacity="0.8" filter="url(#glow-cyan)" />
+    <!-- Top Right -->
+    <path d="M620,75 L620,65 L610,65" fill="none" stroke="#00f5d4" stroke-width="2" stroke-opacity="0.8" filter="url(#glow-cyan)" />
+    <!-- Bottom Left -->
+    <path d="M40,245 L40,255 L50,255" fill="none" stroke="#00f5d4" stroke-width="2" stroke-opacity="0.8" filter="url(#glow-cyan)" />
+    <!-- Bottom Right -->
+    <path d="M620,245 L620,255 L610,255" fill="none" stroke="#00f5d4" stroke-width="2" stroke-opacity="0.8" filter="url(#glow-cyan)" />
+
+    <!-- Scanning Laser Sweep Line -->
+    <line x1="32" y1="62" x2="628" y2="62" stroke-width="1.5" class="laser-sweep" />
+
+    <!-- Terminal Output Log Waterfall (Scrolling Infinitely) -->
+    <g transform="translate(60, 75)">
+      <!-- Line Numbers -->
+      <g font-family="monospace" font-size="11" fill="#1e293b" text-anchor="end">
+        <text x="-15" y="15">01</text>
+        <text x="-15" y="40">02</text>
+        <text x="-15" y="65">03</text>
+        <text x="-15" y="90">04</text>
+        <text x="-15" y="115">05</text>
+        <text x="-15" y="140">06</text>
+        <text x="-15" y="165">07</text>
       </g>
       
-      <!-- Code logs -->
-      <text x="10" y="15" class="log-line" font-weight="bold" fill="#00f5d4" filter="url(#glow-cyan)">> INITIALIZING XAVIA INTERFACE PROTOCOL...</text>
-      <text x="10" y="40" class="log-line">> STATUS: <tspan fill="#34d399">ONLINE</tspan> | CORE: <tspan fill="#00f5d4">NEURAL_ENGINE_V5</tspan></text>
-      <text x="10" y="65" class="log-line">> DIRECTIVE: <tspan fill="#60a5fa">BUILDING NEXT-GEN APPLICATIONS</tspan></text>
-      <text x="10" y="90" class="log-line">> FOCUS: <tspan fill="#c084fc">[FULLSTACK, MOBILE_DEV, AI_INTEGRATION]</tspan></text>
-      <text x="10" y="115" class="log-line">> ENVIRONMENT: <tspan fill="#f43f5e">NODE_19 / NEXT_16 / DART_FLUTTER</tspan></text>
-      <text x="10" y="140" class="log-line">> LOFI SOUNDTRACK: <tspan fill="#f472b6">PLAYING [02:45 / 04:12]</tspan></text>
-      <text x="10" y="165" class="log-line" fill="#00f5d4">$ <tspan fill="#ffffff">ready_for_collaboration --input=your_idea</tspan><rect x="365" y="152" width="8" height="15" class="cursor" /></text>
+      <!-- Clip masked infinite scroller -->
+      <g clip-path="url(#logs-clip)">
+        <g class="log-scroller">
+          <!-- BLOCK 1 (Height: 150px) -->
+          <text x="10" y="15" class="log-line" fill="#00f5d4" filter="url(#glow-cyan)">[ OK ] INITIALIZING TACTICAL NEURAL CONFIG...</text>
+          <text x="10" y="40" class="log-line">[ OK ] ENGINE: <tspan fill="#38bdf8">ACTIVE_V5</tspan> | LATENCY: <tspan fill="#34d399">0.2ms</tspan></text>
+          <text x="10" y="65" class="log-line">[ INFO ] COMPILING FLUTTER &amp; NEXTJS MODULES...</text>
+          <text x="10" y="90" class="log-line">[ OK ] CONNECTION TUNNEL ESTABLISHED [SECURE]</text>
+          <text x="10" y="115" class="log-line" fill="#38bdf8">[ OK ] AI MODEL: GEMINI-3.5-FLASH ON STANDBY</text>
+          <text x="10" y="140" class="log-line" fill="#f472b6">[ PLAYING ] SYNTHWAVE PROTOCOL ACTIVE</text>
+          
+          <!-- BLOCK 2 (Exact repeating block for seamless loop) -->
+          <text x="10" y="165" class="log-line" fill="#00f5d4" filter="url(#glow-cyan)">[ OK ] INITIALIZING TACTICAL NEURAL CONFIG...</text>
+          <text x="10" y="190" class="log-line">[ OK ] ENGINE: <tspan fill="#38bdf8">ACTIVE_V5</tspan> | LATENCY: <tspan fill="#34d399">0.2ms</tspan></text>
+          <text x="10" y="215" class="log-line">[ INFO ] COMPILING FLUTTER &amp; NEXTJS MODULES...</text>
+          <text x="10" y="240" class="log-line">[ OK ] CONNECTION TUNNEL ESTABLISHED [SECURE]</text>
+          <text x="10" y="265" class="log-line" fill="#38bdf8">[ OK ] AI MODEL: GEMINI-3.5-FLASH ON STANDBY</text>
+          <text x="10" y="290" class="log-line" fill="#f472b6">[ PLAYING ] SYNTHWAVE PROTOCOL ACTIVE</text>
+        </g>
+      </g>
+      
+      <!-- Bottom static command line -->
+      <g transform="translate(0, 185)">
+        <text x="10" y="12" class="log-line" fill="#00f5d4">$ <tspan fill="#ffffff">ready_for_collaboration --project=all</tspan><rect x="345" y="-1" width="8" height="15" class="cursor" /></text>
+      </g>
     </g>
   </g>
 
-  <!-- === RIGHT CARD (System HUD Indicators with 3D Hologram Globe) === -->
+  <!-- === RIGHT CARD (CYBER FUSION REACTOR) === -->
   <g id="right-panel">
-    <!-- Card outline glow -->
+    <!-- Card Glass Base -->
     <rect x="660" y="30" width="310" height="260" rx="12" fill="url(#card-gradient-right)" stroke="#0077b6" stroke-width="1.5" stroke-opacity="0.6" filter="url(#glow-blue)" />
-    <rect x="660" y="30" width="310" height="260" rx="12" fill="none" stroke="#00f5d4" stroke-width="1" stroke-opacity="0.3" />
     
-    <!-- Top header layout -->
-    <path d="M660,42 Q660,30 672,30 L958,30 Q970,30 970,42 L970,60 L660,60 Z" fill="#060b18" opacity="0.8" />
-    <text x="815" y="49" font-family="monospace" font-size="11" fill="#475569" text-anchor="middle" letter-spacing="1">SYSTEMS_COCKPIT.cfg</text>
+    <!-- Top Header Bar -->
+    <path d="M660,42 Q660,30 672,30 L958,30 Q970,30 970,42 L970,60 L660,60 Z" fill="#030712" />
+    <text x="815" y="49" font-family="monospace" font-size="11" fill="#475569" text-anchor="middle" letter-spacing="2">FUSION_REACTOR.cfg</text>
 
-    <!-- === SPINNING 3D HOLOGRAM GLOBE === -->
-    <g class="hologram-container">
-      <g class="hologram-globe">
-        <!-- Latitudinal / Horizontal Ring -->
-        <ellipse cx="815" cy="170" rx="48" ry="14" fill="none" stroke="#00f5d4" stroke-width="1.5" stroke-opacity="0.8" filter="url(#glow-cyan)" />
-        <ellipse cx="815" cy="170" rx="48" ry="14" fill="none" stroke="#0077b6" stroke-width="1" stroke-opacity="0.5" transform="rotate(30, 815, 170)" />
-        <ellipse cx="815" cy="170" rx="48" ry="14" fill="none" stroke="#0077b6" stroke-width="1" stroke-opacity="0.5" transform="rotate(-30, 815, 170)" />
+    <!-- Tactical Target Bracket Overlay -->
+    <!-- Top Left -->
+    <path d="M670,75 L670,65 L680,65" fill="none" stroke="#00f5d4" stroke-width="2" stroke-opacity="0.8" filter="url(#glow-cyan)" />
+    <!-- Top Right -->
+    <path d="M960,75 L960,65 L950,65" fill="none" stroke="#00f5d4" stroke-width="2" stroke-opacity="0.8" filter="url(#glow-cyan)" />
+    <!-- Bottom Left -->
+    <path d="M670,245 L670,255 L680,255" fill="none" stroke="#00f5d4" stroke-width="2" stroke-opacity="0.8" filter="url(#glow-cyan)" />
+    <!-- Bottom Right -->
+    <path d="M960,245 L960,255 L950,255" fill="none" stroke="#00f5d4" stroke-width="2" stroke-opacity="0.8" filter="url(#glow-cyan)" />
 
-        <!-- Longitudinal / Vertical Ring -->
-        <ellipse cx="815" cy="170" rx="14" ry="48" fill="none" stroke="#0077b6" stroke-width="1.5" stroke-opacity="0.8" filter="url(#glow-blue)" />
-        <ellipse cx="815" cy="170" rx="14" ry="48" fill="none" stroke="#0077b6" stroke-width="1" stroke-opacity="0.5" transform="rotate(30, 815, 170)" />
-        <ellipse cx="815" cy="170" rx="14" ry="48" fill="none" stroke="#0077b6" stroke-width="1" stroke-opacity="0.5" transform="rotate(-30, 815, 170)" />
-
-        <!-- Diagonal Orbiting Ring -->
-        <ellipse cx="815" cy="170" rx="48" ry="48" fill="none" stroke="#00f5d4" stroke-width="1" stroke-opacity="0.6" filter="url(#glow-cyan)" transform="rotate(45, 815, 170)" />
-        <ellipse cx="815" cy="170" rx="48" ry="48" fill="none" stroke="#0077b6" stroke-width="1" stroke-opacity="0.6" filter="url(#glow-blue)" transform="rotate(-45, 815, 170)" />
-
-        <!-- Core Sphere -->
-        <circle cx="815" cy="170" r="10" fill="#ffffff" filter="url(#glow-cyan)" />
-      </g>
+    <!-- === COCENTRAC FUSION REACTOR CORES === -->
+    <!-- Outer Reactor: Spinning Telemetry Dashes -->
+    <circle cx="815" cy="170" r="65" fill="none" stroke="#0077b6" stroke-dasharray="15 6" stroke-width="2.5" class="rotate-cw" filter="url(#glow-blue)"/>
+    <!-- Outer Ring Crosshair ticks -->
+    <g stroke="#0077b6" stroke-opacity="0.5" stroke-width="1.5">
+      <line x1="815" y1="95" x2="815" y2="105" />
+      <line x1="815" y1="235" x2="815" y2="245" />
+      <line x1="740" y1="170" x2="750" y2="170" />
+      <line x1="880" y1="170" x2="890" y2="170" />
     </g>
 
-    <!-- Outer radar rings (dashed HUD context) -->
-    <circle cx="815" cy="170" r="62" fill="none" stroke="#0077b6" stroke-dasharray="8 6" stroke-width="1" stroke-opacity="0.4" />
-    <circle cx="815" cy="170" r="75" fill="none" stroke="#0077b6" stroke-dasharray="4 8" stroke-width="1" stroke-opacity="0.3" />
+    <!-- Middle Reactor: Counter-spinning Ticks and warning sectors -->
+    <circle cx="815" cy="170" r="50" fill="none" stroke="#00f5d4" stroke-dasharray="6 12 18 12" stroke-width="3" class="rotate-ccw" filter="url(#glow-cyan)"/>
 
-    <!-- Metrics indicators -->
-    <!-- CREATIVITY -->
+    <!-- Inner Reactor: Glowing core containment and plasma -->
+    <circle cx="815" cy="170" r="28" fill="#020512" stroke="#00f5d4" stroke-width="2" />
+    <!-- Central Pulsing Plasma Node -->
+    <g class="blink">
+      <circle cx="815" cy="170" r="14" fill="#00f5d4" filter="url(#glow-cyan)"/>
+      <circle cx="815" cy="170" r="6" fill="#ffffff" />
+    </g>
+    
+    <!-- Outer telemetry arcs (faint HUD) -->
+    <path d="M 735,170 A 80,80 0 0,1 895,170" fill="none" stroke="#0077b6" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 3"/>
+    <path d="M 735,170 A 80,80 0 0,0 895,170" fill="none" stroke="#0077b6" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 3"/>
+
+    <!-- Reactor Stats Data Overlay (Super badass telemetry) -->
     <g transform="translate(680, 80)">
-      <text x="0" y="8" font-family="sans-serif" font-size="9" font-weight="bold" fill="#64748b" letter-spacing="1">CREATIVITY</text>
-      <text x="0" y="22" font-family="monospace" font-size="12" font-weight="bold" fill="#00f5d4">MAX_LEVEL</text>
-      <rect x="0" y="28" width="60" height="3" rx="1.5" fill="#1e293b" />
-      <rect x="0" y="28" width="60" height="3" rx="1.5" fill="#00f5d4" filter="url(#glow-cyan)" />
+      <text x="0" y="8" class="status-tag">CORE_TEMP</text>
+      <text x="0" y="21" font-family="monospace" font-size="11" font-weight="bold" fill="#00f5d4">1.2e8 K</text>
     </g>
-    
-    <!-- OPTIMIZATION -->
     <g transform="translate(680, 140)">
-      <text x="0" y="8" font-family="sans-serif" font-size="9" font-weight="bold" fill="#64748b" letter-spacing="1">OPTIMIZATION</text>
-      <text x="0" y="22" font-family="monospace" font-size="12" font-weight="bold" fill="#00f5d4">98.24%</text>
-      <rect x="0" y="28" width="60" height="3" rx="1.5" fill="#1e293b" />
-      <rect x="0" y="28" width="59" height="3" rx="1.5" fill="#00f5d4" filter="url(#glow-cyan)" />
+      <text x="0" y="8" class="status-tag">REACTOR_STATUS</text>
+      <text x="0" y="21" font-family="monospace" font-size="11" font-weight="bold" fill="#10b981">STABLE</text>
     </g>
-
-    <!-- COFFEE LEVEL -->
     <g transform="translate(680, 200)">
-      <text x="0" y="8" font-family="sans-serif" font-size="9" font-weight="bold" fill="#64748b" letter-spacing="1">COFFEE LEVEL</text>
-      <text x="0" y="22" font-family="monospace" font-size="12" font-weight="bold" fill="#38bdf8">75.50%</text>
-      <rect x="0" y="28" width="60" height="3" rx="1.5" fill="#1e293b" />
-      <rect x="0" y="28" width="45" height="3" rx="1.5" fill="#38bdf8" filter="url(#glow-blue)" />
+      <text x="0" y="8" class="status-tag">MAG_FIELD</text>
+      <text x="0" y="21" font-family="monospace" font-size="11" font-weight="bold" fill="#38bdf8">4.82 T</text>
     </g>
 
-    <!-- INTEGRITY -->
-    <g transform="translate(890, 80)">
-      <text x="60" y="8" font-family="sans-serif" font-size="9" font-weight="bold" fill="#64748b" letter-spacing="1" text-anchor="end">INTEGRITY</text>
-      <text x="60" y="22" font-family="monospace" font-size="12" font-weight="bold" fill="#00f5d4" text-anchor="end">SECURE</text>
-      <rect x="0" y="28" width="60" height="3" rx="1.5" fill="#1e293b" />
-      <rect x="0" y="28" width="60" height="3" rx="1.5" fill="#00f5d4" filter="url(#glow-cyan)" />
+    <g transform="translate(950, 80)" text-anchor="end">
+      <text x="0" y="8" class="status-tag">PWR_OUTPUT</text>
+      <text x="0" y="21" font-family="monospace" font-size="11" font-weight="bold" fill="#00f5d4">1.42 GW</text>
     </g>
-
-    <!-- DEV_SPEED -->
-    <g transform="translate(890, 140)">
-      <text x="60" y="8" font-family="sans-serif" font-size="9" font-weight="bold" fill="#64748b" letter-spacing="1" text-anchor="end">DEV_SPEED</text>
-      <text x="60" y="22" font-family="monospace" font-size="12" font-weight="bold" fill="#00f5d4" text-anchor="end">FAST</text>
-      <rect x="0" y="28" width="60" height="3" rx="1.5" fill="#1e293b" />
-      <rect x="0" y="28" width="54" height="3" rx="1.5" fill="#00f5d4" filter="url(#glow-cyan)" />
+    <g transform="translate(950, 140)" text-anchor="end">
+      <text x="0" y="8" class="status-tag">COGNITIVE_RATE</text>
+      <text x="0" y="21" font-family="monospace" font-size="11" font-weight="bold" fill="#00f5d4">MAX_CAP</text>
     </g>
-
-    <!-- UPTIME -->
-    <g transform="translate(890, 200)">
-      <text x="60" y="8" font-family="sans-serif" font-size="9" font-weight="bold" fill="#64748b" letter-spacing="1" text-anchor="end">UPTIME</text>
-      <text x="60" y="22" font-family="monospace" font-size="12" font-weight="bold" fill="#38bdf8" text-anchor="end">99.98%</text>
-      <rect x="0" y="28" width="60" height="3" rx="1.5" fill="#1e293b" />
-      <rect x="0" y="28" width="59" height="3" rx="1.5" fill="#38bdf8" filter="url(#glow-blue)" />
+    <g transform="translate(950, 200)" text-anchor="end">
+      <text x="0" y="8" class="status-tag">FUEL_RATIO</text>
+      <text x="0" y="21" font-family="monospace" font-size="11" font-weight="bold" fill="#38bdf8">98.44%</text>
     </g>
   </g>
 </svg>
