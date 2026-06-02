@@ -4,9 +4,9 @@
   
   <br/><br/>
   
-  <!-- Typing SVG (Blue Theme) -->
+  <!-- Typing SVG (Blue Theme - Fixed single line carousel) -->
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Inter&size=24&duration=3000&pause=1000&color=00B4D8&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=100&lines=Hi%20there!%20I'm%20Anh%20Nguyen%20%F0%9F%91%8B%3BFull-Stack%20Software%20Developer%3BPassionate%20about%20AI%20and%20Mobile%20Apps%3BBuilding%20delightful%20user%20experiences%20%E2%9A%A1" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Inter&size=24&duration=3000&pause=1000&color=00B4D8&center=true&vCenter=true&multiline=false&repeat=true&width=900&height=70&lines=Hi%20there!%20I'm%20Anh%20Nguyen%20%F0%9F%91%8B;Full-Stack%20Software%20Developer;Passionate%20about%20AI%20and%20Mobile%20Apps;Building%20delightful%20user%20experiences%20%E2%9A%A1" alt="Typing SVG" />
   </a>
 
   <!-- Sleek Blue Badges -->
