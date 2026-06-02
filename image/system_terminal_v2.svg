@@ -102,39 +102,56 @@
   <!-- Vertical partition line -->
   <line x1="330" y1="40" x2="330" y2="305" stroke="#0077b6" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="4 4" />
 
-  <!-- === RIGHT HALF: GLOWING CPU CHIP & CIRCUITS === -->
+  <!-- === RIGHT HALF: GLOWING CPU CHIP & Motherboard blueprint === -->
   <!-- Circuit Pathways -->
   <g fill="none" stroke="#0077b6" stroke-width="1.5" stroke-opacity="0.7">
-    <!-- Top left connector -->
+    <!-- Main board trace tracks -->
     <path d="M 350,85 L 375,110 L 375,130" />
     <circle cx="350" cy="85" r="2.5" fill="#0077b6" />
     
-    <!-- Top connector -->
     <path d="M 410,75 L 410,130" />
     <circle cx="410" cy="75" r="2.5" fill="#0077b6" />
 
-    <!-- Top right connector -->
     <path d="M 470,85 L 445,110 L 445,130" />
     <circle cx="470" cy="85" r="2.5" fill="#0077b6" />
 
-    <!-- Bottom left connector -->
     <path d="M 350,245 L 375,220 L 375,200" />
     <circle cx="350" cy="245" r="2.5" fill="#0077b6" />
 
-    <!-- Bottom connector -->
     <path d="M 410,255 L 410,200" />
     <circle cx="410" cy="255" r="2.5" fill="#0077b6" />
 
-    <!-- Bottom right connector -->
     <path d="M 470,245 L 445,220 L 445,200" />
     <circle cx="470" cy="245" r="2.5" fill="#0077b6" />
 
-    <!-- Right side connector -->
     <path d="M 505,165 L 445,165" />
     <circle cx="505" cy="165" r="2.5" fill="#0077b6" />
+    
+    <!-- 4 Vertical RAM Socket slots layout -->
+    <g stroke="#0077b6" stroke-width="1.2" stroke-opacity="0.5">
+      <rect x="490" y="65" width="4" height="60" rx="1" />
+      <rect x="498" y="65" width="4" height="60" rx="1" />
+      <rect x="506" y="65" width="4" height="60" rx="1" />
+      <rect x="514" y="65" width="4" height="60" rx="1" />
+    </g>
+
+    <!-- Capacitor components (circles with inner crosses) -->
+    <g stroke="#0077b6" stroke-width="1" stroke-opacity="0.6">
+      <circle cx="350" cy="115" r="5" />
+      <line x1="347" y1="115" x2="353" y2="115" />
+      <line x1="350" y1="112" x2="350" y2="118" />
+
+      <circle cx="350" cy="210" r="5" />
+      <line x1="347" y1="210" x2="353" y2="210" />
+      <line x1="350" y1="207" x2="350" y2="213" />
+
+      <circle cx="468" cy="215" r="6" />
+      <line x1="464" y1="215" x2="472" y2="215" />
+      <line x1="468" y1="211" x2="468" y2="219" />
+    </g>
   </g>
 
-  <!-- Glowing Flowing Circuits -->
+  <!-- Glowing Flowing Circuits (Hot Magenta data streams) -->
   <g fill="none" stroke="#ff007f" stroke-width="2" class="circuit-link" filter="url(#glow-magenta)">
     <path d="M 350,85 L 375,110 L 375,130" />
     <path d="M 410,75 L 410,130" />

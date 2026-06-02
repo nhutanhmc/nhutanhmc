@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="100%" height="100%">
   <defs>
-    <!-- Cyan, Blue, and Magenta Glow Filters -->
+    <!-- Intense Glow Filters -->
     <filter id="glow-cyan" x="-40%" y="-40%" width="180%" height="180%">
       <feGaussianBlur stdDeviation="4.5" result="blur1" />
       <feGaussianBlur stdDeviation="9" result="blur2" />
@@ -117,6 +117,12 @@
     @keyframes workload-3 { 0%, 100% { height: 40px; y: 205px; } 50% { height: 95px; y: 150px; } }
     @keyframes workload-4 { 0%, 100% { height: 75px; y: 170px; } 50% { height: 45px; y: 200px; } }
 
+    /* Sine wave shift keyframes */
+    @keyframes wave-shift {
+      0% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: -120; }
+    }
+
     /* Applied classes */
     .blink { animation: blink 2s infinite ease-in-out; }
     .cursor { animation: cursor-blink 1s infinite; fill: #00f5d4; }
@@ -129,6 +135,7 @@
     .radar-line { transform-origin: 865px 210px; animation: spin-cw 3.8s linear infinite; }
     
     .globe3d { transform-style: preserve-3d; transform-origin: 600px 240px; animation: spin3d 8s linear infinite; }
+    .wave-pulse { stroke-dasharray: 20 10; animation: wave-shift 3s linear infinite; }
 
     /* Star fly particles */
     .star-p { fill: #00f5d4; filter: url(#glow-cyan); }
@@ -318,34 +325,57 @@
 
     <!-- Live Performance Diagnostic Chart (Right Inside Card) -->
     <g transform="translate(970, 92)">
+      <!-- Oscilloscope grid lines -->
       <rect x="0" y="0" width="175" height="60" fill="#010412" stroke="#0077b6" stroke-width="1" stroke-opacity="0.3" />
       <line x1="0" y1="30" x2="175" y2="30" stroke="#0077b6" stroke-width="1" stroke-opacity="0.1" stroke-dasharray="3 3" />
       
-      <!-- Spline Chart Wave paths -->
-      <path d="M 0,50 Q 20,10 40,40 T 80,20 T 120,55 T 160,10 T 175,32" fill="none" stroke="#00f5d4" stroke-width="2.5" filter="url(#glow-cyan)" />
-      <path d="M 0,30 Q 30,55 60,15 T 120,45 T 175,20" fill="none" stroke="#ff007f" stroke-width="1.8" stroke-opacity="0.8" filter="url(#glow-magenta)" />
+      <!-- Oscilloscope high-fidelity vector sine wave path (50+ points for detailed shape) -->
+      <path d="M 0,30 L 5,30 L 10,25 L 15,35 L 20,30 L 25,30 L 30,10 L 35,50 L 40,30 L 45,30 L 50,30 L 55,20 L 60,40 L 65,30 L 70,30 L 75,5 L 80,55 L 85,30 L 90,30 L 95,25 L 100,35 L 105,30 L 110,30 L 115,15 L 120,45 L 125,30 L 130,30 L 135,30 L 140,22 L 145,38 L 150,30 L 155,30 L 160,8 L 165,52 L 170,30 L 175,30" 
+            fill="none" stroke="#00f5d4" stroke-width="2.2" class="wave-pulse" filter="url(#glow-cyan)" />
       
       <text x="5" y="12" font-family="monospace" font-size="8.5" fill="#8da4d0" font-weight="bold">CLOCK: 5.8 GHz [100%]</text>
     </g>
 
-    <!-- Workload Multi-Bar Equalizer -->
+    <!-- Workload Multi-Bar Equalizer / Occupied Memory Blocks -->
     <g transform="translate(970, 168)">
-      <text x="0" y="0" font-family="monospace" font-size="9.5" fill="#0077b6" font-weight="bold">COGNITIVE LOAD BYTES</text>
+      <text x="0" y="0" font-family="monospace" font-size="9.5" fill="#0077b6" font-weight="bold">MEMORY SECTOR MAP</text>
       
-      <!-- Bouncing Bars -->
-      <g fill="#ff007f" stroke="none" filter="url(#glow-magenta)">
-        <rect x="0" y="200" width="15" height="30" class="wl-1" rx="2" />
-        <rect x="22" y="210" width="15" height="20" class="wl-2" rx="2" fill="#00f5d4" filter="url(#glow-cyan)" />
-        <rect x="44" y="195" width="15" height="35" class="wl-3" rx="2" />
-        <rect x="66" y="205" width="15" height="25" class="wl-4" rx="2" fill="#00f5d4" filter="url(#glow-cyan)" />
+      <!-- Detailed 8x3 memory block layout (glowing blocks) -->
+      <g stroke="#0077b6" stroke-width="0.5" stroke-opacity="0.4">
+        <!-- Row 1 -->
+        <rect x="0" y="10" width="8" height="8" fill="#ff007f" filter="url(#glow-magenta)" />
+        <rect x="12" y="10" width="8" height="8" fill="#00f5d4" filter="url(#glow-cyan)" />
+        <rect x="24" y="10" width="8" height="8" fill="#02081a" />
+        <rect x="36" y="10" width="8" height="8" fill="#00f5d4" filter="url(#glow-cyan)" />
+        <rect x="48" y="10" width="8" height="8" fill="#02081a" />
+        <rect x="60" y="10" width="8" height="8" fill="#ff007f" filter="url(#glow-magenta)" />
+        <rect x="72" y="10" width="8" height="8" fill="#00f5d4" filter="url(#glow-cyan)" />
+        
+        <!-- Row 2 -->
+        <rect x="0" y="22" width="8" height="8" fill="#02081a" />
+        <rect x="12" y="22" width="8" height="8" fill="#00f5d4" filter="url(#glow-cyan)" />
+        <rect x="24" y="22" width="8" height="8" fill="#ff007f" filter="url(#glow-magenta)" />
+        <rect x="36" y="22" width="8" height="8" fill="#02081a" />
+        <rect x="48" y="22" width="8" height="8" fill="#00f5d4" filter="url(#glow-cyan)" />
+        <rect x="60" y="22" width="8" height="8" fill="#02081a" />
+        <rect x="72" y="22" width="8" height="8" fill="#ff007f" filter="url(#glow-magenta)" />
+        
+        <!-- Row 3 -->
+        <rect x="0" y="34" width="8" height="8" fill="#ff007f" filter="url(#glow-magenta)" />
+        <rect x="12" y="34" width="8" height="8" fill="#02081a" />
+        <rect x="24" y="34" width="8" height="8" fill="#00f5d4" filter="url(#glow-cyan)" />
+        <rect x="36" y="34" width="8" height="8" fill="#ff007f" filter="url(#glow-magenta)" />
+        <rect x="48" y="34" width="8" height="8" fill="#02081a" />
+        <rect x="60" y="34" width="8" height="8" fill="#00f5d4" filter="url(#glow-cyan)" />
+        <rect x="72" y="34" width="8" height="8" fill="#02081a" />
       </g>
 
       <!-- Numerical Stats Panel -->
-      <g transform="translate(90, 15)" font-family="monospace" font-size="9.5" fill="#8da4d0">
+      <g transform="translate(90, 8)" font-family="monospace" font-size="9.5" fill="#8da4d0">
         <text x="0" y="5">MEM_USED: <tspan fill="#ff007f" font-weight="bold">60.4 GB</tspan></text>
         <text x="0" y="22">CORE_TEMP: <tspan fill="#00f5d4">38.6 C</tspan></text>
         <text x="0" y="39">NET_LATENCY: <tspan fill="#ff007f">12ms</tspan></text>
-        <text x="0" y="56" fill="#22c55e" font-weight="bold">SYSTEM STATUS: MAX</text>
+        <text x="0" y="56" fill="#22c55e" font-weight="bold">SYNAPSE: ACTIVE</text>
       </g>
     </g>
 
